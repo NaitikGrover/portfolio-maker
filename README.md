@@ -1,31 +1,52 @@
 # ⚡ Portfolio Maker Skill
 
-> **An intelligent, conversational AI skill that creates production-grade React + Vite + Tailwind CSS portfolios using modern component patterns from 21st.dev, Aceternity UI, and OriginUI.** Compatible with Antigravity, Claude Code, Cursor, Codex, and Gemini CLI.
+> **An intelligent, conversational AI skill that creates production-grade React + Vite + Tailwind CSS portfolios using pre-built modern component primitives from 21st.dev, Aceternity UI, and OriginUI.** Compatible with Antigravity, Claude Code, Cursor, Codex, and Gemini CLI.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Stack: React + Vite + Tailwind](https://img.shields.io/badge/Stack-React%20%2B%20Vite%20%2B%20Tailwind%20%2B%20TS-61dafb)](SKILL.md)
-[![Components: 21st.dev & Aceternity](https://img.shields.io/badge/Components-21st.dev%20%7C%20Aceternity%20%7C%20OriginUI-8b5cf6)](references/prompt-library.md)
+[![Components: 21st.dev & Aceternity](https://img.shields.io/badge/Components-21st.dev%20%7C%20Aceternity%20%7C%20OriginUI-8b5cf6)](references/21st-dev-catalog.md)
 
 ---
 
-## 🌟 What Makes Portfolio Maker Different?
+## 🌟 Why Generic AI Portfolios Look Bad (and How This Solves It)
 
-1. **Default Stack is Modern React + Vite**:
-   Unlike basic tools that output a static flat HTML file, Portfolio Maker builds a full, modular **React + Vite + Tailwind CSS (TypeScript)** application with Lucide React icons, Framer Motion transitions, and clean folder structures.
-   *(Single-file HTML or Next.js are also supported when explicitly requested).*
+When general AI models are asked to "make a portfolio", they tend to write flat, generic Tailwind boilerplate with plain colored boxes and basic borders.
 
-2. **Mandatory Interactive Alignment Step**:
-   The AI never guesses your design preferences. It conducts a resume check (or 3-batch fallback interview if you don't have one) and **explicitly asks** for your preferred:
-   * **Visual Aesthetic**: Sleek Dark Bento (21st.dev/Linear style), Clean Minimalist (Apple/Swiss style), Neo-Brutalist, High-Contrast Editorial, or Bright & Vibrant.
-   * **Theme Mode**: Dark Mode, Light Mode, or Dual Mode with an interactive toggle switch.
+**Portfolio Maker solves this by embedding an authentic, battle-tested component library directly into the skill**:
+* The AI **does not** code basic cards from scratch.
+* The AI assembles the portfolio using verified **21st.dev**, **Aceternity UI**, **Magic UI**, and **OriginUI** React primitives.
+* The AI gives the user a component menu to pick their favorite hero effects, project cards, and interactive widgets.
 
-3. **Built-in 21st.dev & Aceternity Component Systems**:
-   Generates real, modular UI primitives:
-   * `SpotlightCard.tsx` (Radial mouse-tracking hover glow)
-   * `BentoGrid.tsx` & `BentoCard.tsx` (Asymmetric layout with live status indicators)
-   * `Terminal.tsx` (Interactive simulated developer CLI)
-   * `CopyEmailButton.tsx` (OriginUI 1-click email copy with animated tooltip)
-   * `ThemeToggle.tsx` (Persistent localStorage dark/light mode toggle)
+---
+
+## 🧩 Built-in 21st.dev & Aceternity Component Library
+
+The repository includes ready-to-import React TypeScript components inside [`components-library/`](./components-library/):
+
+### 1. Backgrounds & Hero
+* **`AuroraBackground.tsx`**: Fluid animated northern lights mesh gradient.
+* **`TextGenerateEffect.tsx`**: Staggered blur-in word reveal effect.
+* **`FloatingNav.tsx`**: Floating pill navigation bar with frosted glass backdrop blur and active tab indicator.
+
+### 2. High-Impact Project Cards
+* **`SpotlightCard.tsx`**: Radial mouse-tracking cursor spotlight hover effect.
+* **`Card3D.tsx`**: 3D perspective tilt reacting to mouse position with pop-out layers (`translateZ`).
+* **`BorderBeam.tsx`**: Continuous animated neon border beam travelling around featured cards.
+* **`Meteors.tsx`**: Animated shooting star trails behind dark cards.
+
+### 3. Interactive Showcases & Media
+* **`BentoGrid.tsx`**: Responsive asymmetric bento grid layout with live indicator dots.
+* **`TerminalWidget.tsx`**: Simulated interactive developer CLI with typing output.
+* **`BeforeAfterSlider.tsx`**: Interactive swipe slider comparing raw vs. graded footage or before/after redesigns.
+* **`InfiniteMarquee.tsx`**: Smooth, infinite continuous scrolling ticker for logos and tech stacks.
+* **`VideoModal.tsx`**: Click-to-play modal video player with backdrop blur.
+
+### 4. Tactile Micro-Interactions
+* **`ShimmerButton.tsx`**: Tactile button with a rotating 360° light beam border.
+* **`CopyEmailButton.tsx`**: OriginUI-style 1-click email copy with animated tooltip toast.
+* **`ThemeToggle.tsx`**: Smooth sun/moon icon toggle with persistent `localStorage` dark/light modes.
+
+*(See [references/21st-dev-catalog.md](./references/21st-dev-catalog.md) for full recipe combinations).*
 
 ---
 
@@ -38,9 +59,9 @@ flowchart TD
     B -- No / None --> D["Progressive 3-Batch Questionnaire"]
     C --> E["MANDATORY Alignment Step"]
     D --> E
-    E -->|Ask User| F["1. Aesthetic (Bento, Minimalist, etc.)\n2. Theme Mode (Dark, Light, Dual)\n3. Tech Stack Confirmation (React + Vite)"]
-    F --> G["Integrate 21st.dev & Aceternity UI Components"]
-    G --> H["Generate React + Vite + Tailwind (TypeScript) Codebase"]
+    E -->|Ask User| F["1. Aesthetic (Bento, Minimalist, etc.)\n2. Theme Mode (Dark, Light, Dual)\n3. 21st.dev Component Menu (Aurora, 3D Cards, Marquee, etc.)\n4. Confirm React + Vite Stack"]
+    F --> G["Assemble Verified Primitives from components-library/"]
+    G --> H["Generate Production React + Vite (TypeScript) Codebase"]
     H --> I["Build Verification (npm run build) & Dev Server"]
 ```
 
@@ -51,8 +72,6 @@ flowchart TD
 Install Portfolio Maker into your favorite AI tool in seconds:
 
 ### 1. Antigravity & Gemini CLI (Official)
-Clone or copy this repository into your project's workspace skills directory or your global configuration:
-
 ```bash
 # Inside your project workspace
 mkdir -p .agents/skills/portfolio-maker
@@ -66,29 +85,11 @@ git clone https://github.com/your-username/portfolio-maker.git .agents/skills/po
 ### 2. Claude Code
 ```bash
 mkdir -p .claude/skills/portfolio-maker
-cp SKILL.md .claude/skills/portfolio-maker/
+cp -r * .claude/skills/portfolio-maker/
 ```
 
 ### 3. Cursor & Codex
 Copy the instructions from `SKILL.md` into your `.cursor/rules` or project `AGENTS.md`.
-
----
-
-## 💻 Running a Generated Project
-
-Once the AI builds your React + Vite portfolio:
-
-```bash
-cd <your-portfolio-folder>
-npm install
-npm run dev
-```
-
-To build for production:
-```bash
-npm run build
-npm run preview
-```
 
 ---
 
@@ -98,15 +99,32 @@ npm run preview
 portfolio-maker/
 ├── SKILL.md                     # Main skill definition & operating instructions
 ├── README.md                    # Repository documentation & guide
+├── components-library/          # Verified 21st.dev & Aceternity UI React primitives
+│   ├── backgrounds/
+│   │   └── AuroraBackground.tsx
+│   ├── cards/
+│   │   ├── SpotlightCard.tsx
+│   │   ├── Card3D.tsx
+│   │   ├── BorderBeam.tsx
+│   │   └── Meteors.tsx
+│   ├── sections/
+│   │   ├── BentoGrid.tsx
+│   │   ├── InfiniteMarquee.tsx
+│   │   ├── BeforeAfterSlider.tsx
+│   │   ├── VideoModal.tsx
+│   │   └── TerminalWidget.tsx
+│   └── ui/
+│       ├── ShimmerButton.tsx
+│       ├── FloatingNav.tsx
+│       ├── TextGenerateEffect.tsx
+│       ├── CopyEmailButton.tsx
+│       └── ThemeToggle.tsx
 ├── references/
+│   ├── 21st-dev-catalog.md      # Master component menu & composition recipes
 │   ├── questionnaire.md         # 3-batch resume fallback intake questionnaire
 │   ├── design-systems.md        # Color palettes, typography & theme architectures
 │   ├── archetypes.md            # Role-specific blueprints (Dev, Video, Design, etc.)
-│   └── prompt-library.md        # 21st.dev, Aceternity & OriginUI React TSX components
-├── templates/
-│   ├── developer-bento/         # Reference developer bento implementation
-│   ├── video-editor-showreel/   # Reference video editor showreel implementation
-│   └── creative-minimalist/     # Reference minimalist editorial implementation
+│   └── prompt-library.md        # Component patterns and usage recipes
 └── examples/
     ├── scenario-1-developer-with-resume.md
     ├── scenario-2-video-editor-no-resume.md

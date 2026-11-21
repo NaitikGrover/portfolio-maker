@@ -64,14 +64,14 @@ The **Portfolio Maker** skill turns any AI into an elite design engineer and por
 
 ---
 
-## Step 2: MANDATORY Style & Theme Preference Alignment
+## Step 2: MANDATORY Style, Theme & Component Selection
 
 > [!IMPORTANT]
 > **DO NOT skip directly to code generation!**
-> Unless the user already explicitly answered these questions in their prompt, you **MUST** pause and ask the user for their style and theme preferences:
+> Unless the user already explicitly answered these questions in their prompt, you **MUST** pause and ask the user for their style, theme, and component preferences:
 
 Ask the user:
-> *"Before I generate the code, let's align on the visual design and setup:*
+> *"Before I build your portfolio, let's customize the visual design and interactive components:*
 > 
 > 1. **Visual Style / Aesthetic**:
 >    * **Sleek Tech / Dark Bento** (Inspired by 21st.dev, Linear & Aceternity — glowing borders, spotlight hover cards, carbon dark canvas).
@@ -85,7 +85,14 @@ Ask the user:
 >    * **Light Mode** (Crisp, clean, high-readability).
 >    * **Dual Mode (Recommended)** (Both Light and Dark mode with an interactive toggle switch that remembers preferences in `localStorage`).
 > 
-> 3. **Tech Stack**:
+> 3. **Signature 21st.dev / Aceternity Components**:
+>    Which interactive elements would you like to feature?
+>    * **Hero**: `AuroraBackground` (flowing northern lights) OR `Spotlight Hero` OR `TextGenerateEffect` (blur-in text).
+>    * **Projects**: `SpotlightCard` (mouse glow) OR `Card3D` (perspective tilt) OR `BorderBeam` (moving neon border) OR `Meteors` (shooting stars).
+>    * **Interactive Showcase**: `TerminalWidget` (CLI) OR `BeforeAfterSlider` (image/video comparison) OR `InfiniteMarquee` (logo/tech ticker) OR `VideoModal` (popup showreel).
+>    * **Controls**: `FloatingNav` (floating pill navbar) + `ShimmerButton` (shimmering CTA button).
+> 
+> 4. **Tech Stack**:
 >    * By default, I will generate a complete, modular **React + Vite + Tailwind CSS** project with Lucide React and Framer Motion components.
 >    * (If you prefer a single-file HTML or Next.js instead, just let me know!)"*
 
@@ -93,20 +100,20 @@ Wait for the user's response (or proceed using their stated preferences if they 
 
 ---
 
-## Step 3: Prompt Libraries & Web Research Integration
+## Step 3: Verified 21st.dev & Aceternity Component Assembly
 
-The AI has full permission and is expected to search the web and leverage modern prompt and component registries — including **21st.dev**, **Aceternity UI / Animos**, **OriginKit / OriginUI**, **Flows**, and **Micrograph**:
-
-* **Web Search for Elements**: If a specific archetype, interaction, or style requires a specialized widget (e.g. video showreel modal, audio waveform, 3D card tilt, animated tech marquee, interactive filter tab), the AI should search the web for the latest clean React + Tailwind + Framer Motion implementations.
-* **Component Primitives to Integrate**:
-  * **Spotlight Card Hover Effect** (`Spotlight.tsx`): Radial gradient spotlight tracking mouse position across card surfaces (Aceternity / 21st.dev).
-  * **Bento Grid & Bento Cards** (`BentoGrid.tsx`): Asymmetric card layout with varying column/row spans and live status indicators (21st.dev / Magic UI).
-  * **Border Beam & Gradient Glows** (`BorderBeam.tsx`): Smooth animated border glow around featured hero cards.
-  * **Interactive Terminal Widget** (`Terminal.tsx`): Simulated command-line interface with interactive tabs or output commands (`whoami`, `specialties`, `status`).
-  * **OriginUI 1-Click Copy Email Pill** (`CopyEmailButton.tsx`): Tactile button copying contact email with animated pop-up tooltip feedback.
-  * **Interactive Theme Switcher** (`ThemeToggle.tsx`): Accessible toggle switching between `dark` and `light` classes on `document.documentElement` with `localStorage` persistence.
-
-*(Consult [references/prompt-library.md](./references/prompt-library.md) for ready-to-use React/TSX implementations.)*
+> [!CAUTION]
+> **RULE: NEVER generate generic, flat Tailwind HTML divs for main sections.**
+> Generic boilerplate looks amateurish. A portfolio must look like an award-winning 21st.dev / Aceternity showcase.
+> 
+> Assemble the portfolio by using the production-ready component primitives from `components-library/` (or search the web for the latest 21st.dev TSX patterns):
+> 
+> * **Backgrounds**: `components-library/backgrounds/AuroraBackground.tsx`
+> * **Cards**: `components-library/cards/SpotlightCard.tsx`, `Card3D.tsx`, `BorderBeam.tsx`, `Meteors.tsx`
+> * **Layouts & Media**: `components-library/sections/BentoGrid.tsx`, `InfiniteMarquee.tsx`, `BeforeAfterSlider.tsx`, `VideoModal.tsx`, `TerminalWidget.tsx`
+> * **UI & Navigation**: `components-library/ui/FloatingNav.tsx`, `ShimmerButton.tsx`, `TextGenerateEffect.tsx`, `CopyEmailButton.tsx`, `ThemeToggle.tsx`
+> 
+> Consult [references/21st-dev-catalog.md](./references/21st-dev-catalog.md) for proven composition recipes. If a user asks for a unique interaction not in the local library, search the web to fetch the exact 21st.dev / Aceternity React implementation.
 
 ---
 
