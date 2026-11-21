@@ -1,159 +1,147 @@
 ---
 name: portfolio-maker
-description: >-
-  Interactive, intelligent portfolio creation skill for any AI assistant. Activates whenever
-  a user asks to build, create, design, or update a personal portfolio website. Guides the
-  user through resume intake (or a comprehensive fallback questionnaire if no resume is available),
-  mandatory style & theme preference questioning (Light, Dark, or Dual mode; Dark Bento, Minimalist,
-  etc.), and builds a production-grade React + Vite + Tailwind CSS portfolio by default using modern
-  component patterns inspired by 21st.dev, OriginUI, Aceternity/Animos, Flows, and Micrograph.
-  Enforces strict anti-AI-slop design rules (no generic purple neon gradients).
+description: Sovereign, production-grade portfolio engineering skill for AI assistants. Builds world-class personal portfolios, developer showcases, creator showreels, and design case studies with built-in elite aesthetic taste, mathematical typographic hierarchy, anti-slop rules, verified 21st.dev/Aceternity component primitives, and instant dual delivery (React+Vite or standalone single-file HTML).
 ---
 
-# Portfolio Maker Skill
+# Portfolio Maker: Sovereign Design & Engineering Skill
 
-The **Portfolio Maker** skill turns any AI into an elite design engineer and portfolio consultant. It systematically extracts the user's background, aligns on visual preferences, and generates a modern, production-grade **React + Vite + Tailwind CSS** portfolio website by default.
+> **Sovereign & Self-Contained**: This skill operates with complete autonomy. It does **not** depend on, delegate to, or require any external third-party design or animation skills. All aesthetic intuition, typographic mathematics, spatial harmony, micro-interaction dynamics, anti-slop enforcement, and component primitives are natively built into this skill.
 
 ---
 
-## 🚫 STRICT DESIGN RULE: Banish the Purple Neon "AI Slop" Look
+## 🎯 Primary Purpose & Mission
 
-> [!CAUTION]
-> **NEVER use the cliché purple/violet/magenta neon gradient "AI Slop" style.**
-> The trademark signs of lazy AI web design are:
-> 1. Giant purple/indigo blurry blobs floating in the background (`bg-purple-500/20 rounded-full blur-3xl`).
-> 2. Cheap purple-to-pink gradient text on every headline (`bg-gradient-to-r from-purple-500 via-indigo-500 to-pink-500`).
-> 3. Tacky neon synthwave laser card borders.
->
-> **What to use instead (Human-Crafted, Elite Aesthetics):**
-> * **Pure Swiss Monochrome & Tactile Grays**: Deep carbon canvas (`#09090b` or `#050505`), hairline white borders (`border-white/[0.08]`), clean white typography with zinc muted subheadings (`text-zinc-400`).
-> * **Intentional, Single-Accent Palettes**:
->   * *Titanium & Ice*: Pure monochrome with crisp white/silver borders and subtle white spotlight glow (`rgba(255, 255, 255, 0.08)`).
->   * *Minimalist Emerald / Mint*: Clean dark canvas with subtle emerald dot status badges (`#10b981`).
->   * *Electric Cobalt / International Klein Blue*: High-trust `#2563eb` accents on interactive buttons.
->   * *Warm Bronze / Amber*: Refined luxury agency warmth (`#f59e0b` or `#d97706`).
-> * **Design Depth Through Typography & Layout**: Rely on bold typographic hierarchy, generous whitespace, asymmetric bento spans, and physical micro-interactions rather than cheap neon gradient text.
+To eliminate amateurish, generic "AI slop" portfolios and autonomously produce **award-winning, production-grade portfolios** for any professional across 5 core archetypes:
+1. **Software Engineers & Systems Architects** (Distributed systems, high-throughput APIs, clean technical bento)
+2. **Video Editors, Motion Graphics & Creators** (Viral showreels, before/after color grade comparisons, view-count metrics)
+3. **Product Designers & UI/UX Leads** (Design systems, case studies, high-contrast Swiss typography, token breakdowns)
+4. **AI/ML Researchers & Data Engineers** (Model architectures, arXiv publications, benchmark telemetry, weights badges)
+5. **Agencies, Consultants & Solopreneurs** (Social proof, client reviews, service tiers, frictionless booking conversion)
 
 ---
 
-## 🚀 Skill Lifecycle & Workflow
+## 🚫 The Anti-AI-Slop Code of Honor (STRICT ENFORCEMENT)
 
-```
-[Trigger / User Request]
-        │
-        ▼
-[Step 1: Resume Intake Check]
-   ├── Resume Provided? ───────────────► Parse & Extract Info
-   └── No Resume / User Declines ──────► Run Fallback Questionnaire (Batch 1-3)
-                                                  │
-                                                  ▼
-                                       [Step 2: MANDATORY Style & Theme Alignment]
-                                          * Ask: Visual Aesthetic (Dark Bento, Minimalist, etc.)
-                                          * Ask: Theme Mode (Dark, Light, or Dual-mode toggle)
-                                          * Confirm Stack: Default React + Vite + Tailwind
-                                                  │
-                                                  ▼
-                                       [Step 3: Component System Selection (21st.dev / Aceternity)]
-                                                  │
-                                                  ▼
-                                       [Step 4: React + Vite Code Generation]
-                                                  │
-                                                  ▼
-                                       [Step 5: Build Verification & Preview]
-```
+Every portfolio generated MUST pass this rigorous aesthetic filter before outputting code:
 
----
+### 1. Banned Visual Slop:
+* ❌ **NEVER use the cliché purple/violet neon gradient trope**: No `from-purple-500 via-indigo-500 to-pink-500` headline text. No blurry purple background glow orbs (`bg-purple-500/10 blur-3xl`).
+* ❌ **No flat, boring gray box grids**: Avoid default Tailwind `bg-gray-100` / `border-gray-300` blocks with zero depth or texture.
+* ❌ **No over-saturated laser borders**: Avoid high-intensity synthwave neon strokes.
 
-## Step 1: Initialization & Resume Intake
+### 2. Approved Elite Color Palettes:
+* **Titanium Monochrome (Swiss Dark/Light)**: Deep obsidian canvas (`#09090b`), raised card layer (`#121215` with `backdrop-blur-md`), hairline borders (`border-white/[0.08]`), crisp white headings (`#ffffff`), zinc muted text (`#a1a1aa`), subtle slate/white spotlights (`rgba(255,255,255,0.06)`).
+* **Precision Emerald & Slate**: Obsidian canvas (`#09090b`), emerald live status indicator (`#10b981`), monochrome cards with subtle mint hover accents.
+* **International Electric Cobalt**: Deep charcoal canvas (`#0a0a0f`), crisp white typography, high-contrast electric royal blue (`#2563eb`) interaction targets and buttons.
+* **Warm Architectural Sand & Espresso**: Warm cream canvas (`#fafaf9`), rich espresso headings (`#18181b`), subtle champagne/amber (`#d97706`) accents.
+* **Cinematic Rose & Amber**: Obsidian `#0b0c10` canvas, high-impact rose (`#e11d48`) and warm amber (`#f59e0b`) accents for creative and video showreels.
 
-1. **Acknowledge and Set the Stage**:
-   Welcome the user and confirm you'll build their portfolio step-by-step.
-
-2. **Check for Resume**:
-   * Inspect current context and workspace files for an existing resume (`.pdf`, `.md`, `.txt`, `.docx`, LinkedIn export).
-   * If found: Confirm with the user and extract: Name, Title, Bio, Projects, Experience, Metrics, Tech Stack.
-   * If NOT found: Ask the user directly:
-     > *"To start crafting your portfolio, could you share your resume? You can paste its text, upload a file, or provide a link.*
-     > 
-     > *If you don't have one ready, no worries at all! Just let me know, and I'll ask you a few quick questions to gather everything we need."*
-
-3. **Fallback Questionnaire (When User Has No Resume)**:
-   If the user says **"I don't have a resume"**, use the **Smart Progressive Intake** strategy from [references/questionnaire.md](./references/questionnaire.md):
-   * **Batch 1**: Name, Title, 1-Sentence Hook, Contact/Social links.
-   * **Batch 2**: Experience history with metrics, top 2-4 projects (title, tech, outcome, links).
-   * **Batch 3**: Tools/Skills matrix, certifications, and availability status.
+### 3. Banned AI Fluff Copy:
+* ❌ Banned: *"Passionate developer transforming ideas into elegant digital solutions."*
+* ❌ Banned: *"Innovating at the intersection of design, technology, and empathy."*
+* ❌ Banned: *"Results-oriented professional with a knack for problem-solving."*
+* ✅ **Required**: Concrete, metric-driven, impact-focused statements:
+  * *"Built distributed Go microservices handling 120k req/s at 14ms p99 latency."*
+  * *"Edited viral long-form YouTube documentaries generating 75M+ organic views."*
+  * *"Spearheaded multi-brand Figma design token system adopted across 42 engineering squads."*
 
 ---
 
-## Step 2: MANDATORY Style, Theme & Component Selection
+## 🧠 The Native Aesthetic Engine (Built-In Design Intelligence)
 
-> [!IMPORTANT]
-> **DO NOT skip directly to code generation!**
-> Unless the user already explicitly answered these questions in their prompt, you **MUST** pause and ask the user for their style, theme, and component preferences:
+The AI must apply these mathematical design laws to every element:
 
-Ask the user:
-> *"Before I build your portfolio, let's customize the visual design and interactive components:*
-> 
-> 1. **Visual Style / Aesthetic**:
->    * **Sleek Tech / Dark Bento** (Inspired by 21st.dev, Linear & Aceternity — glowing borders, spotlight hover cards, carbon dark canvas).
->    * **Clean Minimalist / Swiss Grid** (Inspired by Apple & Dieter Rams — generous whitespace, crisp typography, subtle borders).
->    * **Neo-Brutalism** (High-contrast bold borders, drop shadows, vibrant pop accent colors).
->    * **High-Contrast Editorial** (Elegant serif headlines, magazine layout, studio aesthetic).
->    * **Bright & Vibrant** (Warm playful gradients, rounded pill cards, soft micro-interactions).
-> 
-> 2. **Theme Mode**:
->    * **Dark Mode** (Sleek, immersive tech vibe).
->    * **Light Mode** (Crisp, clean, high-readability).
->    * **Dual Mode (Recommended)** (Both Light and Dark mode with an interactive toggle switch that remembers preferences in `localStorage`).
-> 
-> 3. **Signature 21st.dev Hero & Component Selection**:
->    Which hero section and interactive elements would you like to feature?
->    * **Hero Section (from `components-library/heroes/`)**:
->      * **`ImageStreamHero`** (Vanishing-point streaming rails) — *Best for video editors & visual creators*
->      * **`ProductRailGallery`** (Interactive clothing rack with swinging hangers) — *Best for e-commerce & streetwear*
->      * **`TiltedGridHero`** (Curved 3D image stream bending towards viewer) — *Best for UI/UX & photographers*
->      * **`PerspectiveTunnelHero`** (3D Z-axis spatial tunnel with metrics) — *Best for software & systems engineers*
->      * **`PrismHero`** (Procedural chromatic crystal refraction) — *Best for art directors & luxury portfolios*
->      * **`TigerTearRevealHero`** (Interactive paper tear slogan reveal) — *Best for high-impact creatives & agencies*
->      * **`AgencyHero01`** (Agency hero with trust avatars & star ratings) — *Best for freelancers & consultants*
->      * **`ResponsiveHeroBanner`** (Cinematic banner with glassmorphic navigation) — *Best for tech founders & leads*
->      * **`CenteredImageFanHero`** (Highlighted headline with 3-image fan collage) — *Best for product designers*
->      * *(Or ambient background: `AuroraBackground` with `TextGenerateEffect`)*
->    * **Project Cards**: `SpotlightCard` (mouse glow) OR `Card3D` (perspective tilt) OR `BorderBeam` (moving neon border) OR `Meteors` (shooting stars).
->    * **Interactive Showcase**: `TerminalWidget` (CLI) OR `BeforeAfterSlider` (image/video comparison) OR `InfiniteMarquee` (logo/tech ticker) OR `VideoModal` (popup showreel).
->    * **Controls**: `FloatingNav` (floating pill navbar) + `ShimmerButton` (shimmering CTA button).
-> 
-> 4. **Tech Stack**:
->    * By default, I will generate a complete, modular **React + Vite + Tailwind CSS** project with Lucide React and Framer Motion components.
->    * (If you prefer a single-file HTML or Next.js instead, just let me know!)"*
+### 1. Typographic Hierarchy & Optical Rhythm
+* **Display Headlines (`text-4xl` to `text-6xl md:text-7xl`)**:
+  * Line-height must be tight (`leading-[1.08]` to `leading-[1.12]`). Loose leading on large fonts looks amateur.
+  * Letter-spacing must be compressed (`tracking-tight` or `tracking-tighter`).
+  * Font weights: Bold or Extrabold (`font-bold` / `font-extrabold`) for technical; Medium or Semibold (`font-medium` / `font-semibold`) for editorial serif.
+* **Body Copy (`text-base` to `text-lg`)**:
+  * Line-height must be generous (`leading-relaxed` or `leading-7`) to ensure readability.
+  * Line length (Measure): Cap body text width using `max-w-xl` or `max-w-2xl` (45–75 characters per line). Never let paragraphs stretch across the full screen width.
+  * Text Alignment: **Never center-align more than 3 consecutive lines of body text.** Left-align for human reading ergonomics.
+* **Curated Font Pairings**:
+  * *Modern Tech*: `Inter` or `Geist Sans` + `JetBrains Mono` for tags and code.
+  * *High-Impact Creative*: `Plus Jakarta Sans` or `Syne` + `Inter`.
+  * *Editorial & Luxury*: `Cormorant Garamond` (serif display) + `Inter` (sans body).
 
-Wait for the user's response (or proceed using their stated preferences if they already answered).
+### 2. Spatial Rhythm & The 8pt Mathematical Grid
+* **Section Padding**: Generous vertical breathing space (`py-20 md:py-28`). Tight sections suffocate the design.
+* **Layout Stack**: Vertical spacing between major sections must use `space-y-24` or `space-y-28`.
+* **Card Grids**: Standardize on `gap-6` or `gap-8`.
+* **Content Width Containers**:
+  * Editorial / Minimalist: `max-w-4xl mx-auto px-6`
+  * Developer Bento: `max-w-5xl mx-auto px-4 sm:px-6`
+  * Media Showreel: `max-w-6xl mx-auto px-4 sm:px-6`
 
----
+### 3. Surface Elevation & Hairline Border Science
+* **Layer 0 (Canvas)**: `#09090b` (Dark) / `#fafaf9` or `#ffffff` (Light).
+* **Layer 1 (Card Base)**: `#121215` / `bg-white dark:bg-zinc-900/60` with `backdrop-blur-md`.
+* **Layer 2 (Hairline Borders)**: `border border-zinc-200/80 dark:border-zinc-800/80` or `border border-white/[0.08]`. Never use heavy, muddy drop-shadows.
+* **Layer 3 (Micro-Hover)**: Cursor-following radial spotlight (`rgba(255,255,255,0.06)`), or subtle border brighten `hover:border-zinc-400 dark:hover:border-zinc-700`, plus subtle lift `hover:-translate-y-0.5 transition-all duration-300`.
 
-## Step 3: Verified 21st.dev & Aceternity Component Assembly
-
-> [!CAUTION]
-> **RULE: NEVER generate generic, flat Tailwind HTML divs for main sections.**
-> Generic boilerplate looks amateurish. A portfolio must look like an award-winning 21st.dev / Aceternity showcase.
-> 
-> Assemble the portfolio by using the production-ready component primitives from `components-library/` or query the complete **21st.dev Master Catalog** in [`components-library/catalog/INDEX.md`](./components-library/catalog/INDEX.md) (indexing 9,600+ components with `npx shadcn` install commands across all 21 categories: Heroes, Backgrounds, Buttons, Galleries, Features, FAQs, Docks, Pricing, etc.):
-> 
-> * **Heroes (from 21st.dev)**: `components-library/heroes/` (`ImageStreamHero.tsx`, `ProductRailGallery.tsx`, `TiltedGridHero.tsx`, `PerspectiveTunnelHero.tsx`, `PrismHero.tsx`, `TigerTearRevealHero.tsx`, `AgencyHero01.tsx`, `ResponsiveHeroBanner.tsx`, `CenteredImageFanHero.tsx` + 396 more in `components-library/catalog/heroes.md`)
-> * **Backgrounds**: `components-library/backgrounds/AuroraBackground.tsx` (+ 470 more in `components-library/catalog/backgrounds.md`)
-> * **Cards & Features**: `components-library/cards/` (SpotlightCard, Card3D, BorderBeam, Meteors + 855 more in `components-library/catalog/features.md`)
-> * **Layouts & Media**: `components-library/sections/` (BentoGrid, InfiniteMarquee, BeforeAfterSlider, VideoModal, TerminalWidget + 318 more in `components-library/catalog/galleries.md`)
-> * **UI & Navigation**: `components-library/ui/` (FloatingNav, ShimmerButton, TextGenerateEffect, CopyEmailButton, ThemeToggle + 422 buttons & 351 navbars in `catalog/`)
-> 
-> Consult [references/21st-dev-catalog.md](./references/21st-dev-catalog.md) and [`components-library/catalog/INDEX.md`](./components-library/catalog/INDEX.md) for proven composition recipes and full links.
+### 4. Interactive Details & Polish
+* **Live Status Indicator**:
+  ```html
+  <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+    <span>Available for Q1 2026 Opportunities</span>
+  </div>
+  ```
+* **One-Click Copy Email Pill (with visual feedback)**:
+  Provide instant clipboard copy with a tooltip transition confirming "Copied!".
+* **Dual-Mode Theme Switcher**:
+  Always include a working theme toggle (Dark / Light) with icon morphing and `localStorage` persistence.
 
 ---
 
-## Step 4: Code Generation Architecture (React + Vite by Default)
+## 📦 Verified Component Arsenal (Direct Access)
 
-Unless the user explicitly requests another stack (e.g. static single HTML or Next.js), **always generate a full React + Vite + Tailwind CSS (TypeScript) application**:
+The skill includes verified, production-ready TSX primitives and full catalogs:
 
-### Project Structure:
+### 1. Signature Heroes (`components-library/heroes/`):
+* **`ImageStreamHero.tsx`**: Vanishing-point streaming rails with depth (creators & video editors).
+* **`PerspectiveTunnelHero.tsx`**: 3D Z-axis spatial perspective with live metrics (engineers & architects).
+* **`ProductRailGallery.tsx`**: Interactive clothing rack with swinging physics (e-commerce & fashion).
+* **`TiltedGridHero.tsx`**: Curved 3D image stream bending toward viewer (UI/UX designers & photographers).
+* **`PrismHero.tsx`**: Chromatic crystal refraction shader aesthetic (art directors & luxury portfolios).
+* **`TigerTearRevealHero.tsx`**: Interactive tear reveal slogan effect (high-impact creatives).
+* **`AgencyHero01.tsx`**: High-trust agency hero with social avatars and rating badges (freelancers & agencies).
+* **`ResponsiveHeroBanner.tsx`**: Cinematic banner with glassmorphic navigation (founders & leads).
+* **`CenteredImageFanHero.tsx`**: Highlighted headline with 3-image fan collage (product designers).
+
+### 2. Standalone Interactive Primitives (`components-library/`):
+* **Backgrounds**: `backgrounds/AuroraBackground.tsx` (subtle emerald/cyan/slate waves, no neon purple).
+* **Interactive Cards**: `cards/SpotlightCard.tsx` (mouse-tracking glow), `cards/Card3D.tsx` (perspective tilt), `cards/BorderBeam.tsx` (animated hairline border beam), `cards/Meteors.tsx` (shooting star particles).
+* **Sections & Layouts**: `sections/BentoGrid.tsx` (asymmetric responsive grid), `sections/InfiniteMarquee.tsx` (seamless tech/logo ticker), `sections/BeforeAfterSlider.tsx` (interactive image/video comparison), `sections/VideoModal.tsx` (cinematic video popup), `sections/TerminalWidget.tsx` (simulated interactive CLI).
+* **UI Controls**: `ui/FloatingNav.tsx` (floating glassmorphic pill navbar), `ui/ShimmerButton.tsx` (shimmering action button), `ui/TextGenerateEffect.tsx` (staggered word reveal), `ui/CopyEmailButton.tsx` (one-click copy pill), `ui/ThemeToggle.tsx` (dark/light theme toggle).
+
+### 3. Master Component Index:
+* Access the complete **21st.dev Master Catalog** in [`components-library/catalog/INDEX.md`](./components-library/catalog/INDEX.md) containing 11,750+ categorized components across 22 categories (Buttons, Heroes, Galleries, Features, Pricing, Footers, FAQs, etc.).
+
+### 4. Official shadcn MCP Server (Zero API Key):
+* The AI uses the official **shadcn MCP server** (`npx shadcn@latest mcp`) which is **100% free, open-source, and requires zero API keys**.
+* Any component from the catalog can be installed via:
+  ```bash
+  npx shadcn@latest add "https://21st.dev/r/<author>/<component-name>"
+  ```
+* No paid 21st.dev MCP or API key is ever required.
+
+### 5. Premium Template & Motion Design Inspirations:
+The AI can actively draw architectural patterns, kinetic motion, and high-conversion layouts from the world's most premium design ecosystems:
+* **VibeUI (`vibeui.dev`)**: Modern component compositions, tactile card stacks, interactive badges, floating control pills, and aesthetic layout primitives.
+* **Trical (`trical.so`)**: Ultra-clean, high-converting portfolio templates, magazine-grade typography, subtle divider lines, and editorial project case studies.
+* **Motion Site (`motion.site.ai`)**: Fluid micro-animations, kinetic headline reveals, spring physics, and organic transition curves.
+* **21st.dev & Aceternity UI**: Master catalog of 11,750+ shadcn-compatible components and spatial 3D interaction primitives.
+
+---
+
+## ⚡ Dual Delivery Modes
+
+The AI supports two flexible delivery formats depending on the user's needs:
+
+### Mode A: Full React + Vite + Tailwind (TypeScript) Codebase (Default)
+Generates a complete, modular, enterprise-grade project structure:
 ```text
 my-portfolio/
 ├── package.json
@@ -167,76 +155,117 @@ my-portfolio/
     ├── App.tsx
     ├── index.css
     ├── components/
-    │   ├── ui/
-    │   │   ├── Spotlight.tsx
-    │   │   ├── BentoGrid.tsx
-    │   │   ├── BorderBeam.tsx
-    │   │   ├── Terminal.tsx
-    │   │   ├── CopyEmailButton.tsx
-    │   │   └── ThemeToggle.tsx
-    │   └── sections/
-    │       ├── Navbar.tsx
-    │       ├── Hero.tsx
-    │       ├── ExpertiseBento.tsx
-    │       ├── Projects.tsx
-    │       ├── AILabs.tsx (or MediaShowreel for editors)
-    │       ├── ContentSection.tsx
-    │       └── Footer.tsx
-    └── types/
-        └── index.ts
+    │   ├── ui/ (Spotlight, ThemeToggle, CopyEmailButton, FloatingNav)
+    │   └── sections/ (Hero, BentoGrid, Projects, Experience, Footer)
+    └── types/index.ts
 ```
 
-### Essential Dependencies (`package.json`):
-```json
-{
-  "name": "portfolio",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "framer-motion": "^11.11.17",
-    "lucide-react": "^0.460.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tailwind-merge": "^2.5.4"
-  },
-  "devDependencies": {
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react": "^4.3.3",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.15",
-    "typescript": "^5.6.3",
-    "vite": "^5.4.11"
-  }
-}
-```
+### Mode B: Instant Standalone Single-File HTML/Tailwind/Lucide/JS
+When the user wants zero setup, immediate local browser preview, or instant hosting (e.g. GitHub Pages):
+* Generates a single, beautifully formatted, self-contained `index.html`.
+* Includes Tailwind CSS CDN, Google Fonts, Lucide Icons CDN, and vanilla JS for theme toggle, copy feedback, modal popups, and hover interactions.
+* See production reference implementations in `templates/developer-bento/index.html`, `templates/creative-minimalist/index.html`, and `templates/video-editor-showreel/index.html`.
 
 ---
 
-## Step 5: Verification & Run Instructions
+## 🛠️ Step-by-Step Execution Workflow
 
-After generating the files:
-1. Run `npm install` and `npm run build` to verify there are zero TypeScript or bundling errors.
-2. Provide clear run commands:
+```
+┌────────────────────────────────────────────────────────┐
+│  STEP 1: INTAKE & RESUME EXTRACTION                   │
+│  Extract metrics, roles, projects, tech stack          │
+│  (Or execute 3-batch fallback questionnaire)           │
+└───────────────────────────┬────────────────────────────┘
+                            │
+┌───────────────────────────▼────────────────────────────┐
+│  STEP 2: MANDATORY INTERACTIVE ALIGNMENT               │
+│  Ask: Aesthetic, Theme Mode, Hero & Component choices  │
+└───────────────────────────┬────────────────────────────┘
+                            │
+┌───────────────────────────▼────────────────────────────┐
+│  STEP 3: COMPONENT SELECTION & ARCHITECTURE           │
+│  Assemble 21st.dev primitives from components-library/ │
+└───────────────────────────┬────────────────────────────┘
+                            │
+┌───────────────────────────▼────────────────────────────┐
+│  STEP 4: PRODUCTION CODE GENERATION                   │
+│  Generate React + Vite (default) or Standalone HTML   │
+└───────────────────────────┬────────────────────────────┘
+                            │
+┌───────────────────────────▼────────────────────────────┐
+│  STEP 5: AUDIT & RUN INSTRUCTIONS                     │
+│  Check anti-slop rules, verify build, provide commands │
+└────────────────────────────────────────────────────────┘
+```
+
+### Step 1: Intake Protocol
+1. **If user provides a resume or LinkedIn summary**: Parse real metrics, career timeline, top 3-4 projects, and tech competencies.
+2. **If no resume is provided**: Never hallucinate credentials. Execute the 3-batch questionnaire from [references/questionnaire.md](./references/questionnaire.md):
+   * *Batch 1: Identity & Target Role*
+   * *Batch 2: Top 2-3 Projects & Concrete Numbers*
+   * *Batch 3: Social & Contact Links*
+
+### Step 2: Mandatory Interactive Alignment (DO NOT SKIP)
+Unless the user explicitly specified their visual style and components upfront, pause and present the interactive alignment:
+
+> *"Before I generate your portfolio, let's customize the visual design and interactive components:*
+> 
+> 1. **Visual Style / Aesthetic**:
+>    * **Sleek Tech / Dark Bento** (Linear / 21st.dev style — obsidian canvas, spotlight hover cards, hairline borders).
+>    * **Clean Minimalist / Swiss Modern** (Dieter Rams / Apple style — generous whitespace, refined typography, subtle lines).
+>    * **High-Contrast Editorial** (Serif headlines, studio aesthetic, magazine-style case studies).
+>    * **Cinematic Creator / Motion** (Deep dark canvas, rich video showreel embeds, view-count badges).
+>    * **Neo-Brutalism** (Solid black borders, hard drop shadows, playful high-contrast badges).
+> 
+> 2. **Theme Mode**:
+>    * **Dual Mode (Recommended)** (Both Light and Dark mode with an interactive toggle switch and `localStorage` memory).
+>    * **Dark Mode Only** (Sleek, immersive canvas).
+>    * **Light Mode Only** (Crisp, clean, high-readability).
+> 
+> 3. **Signature Hero Section**:
+>    Which hero section would you like to feature?
+>    * **`PerspectiveTunnelHero`** (3D spatial depth with live metrics) — *Best for engineers & architects*
+>    * **`ImageStreamHero`** (Vanishing-point streaming rails) — *Best for video editors & creators*
+>    * **`TiltedGridHero`** (Curved 3D image stream) — *Best for UI/UX & photographers*
+>    * **`PrismHero`** (Refractive chromatic crystal) — *Best for art directors & luxury brands*
+>    * **`AgencyHero01`** (Agency hero with trust avatars & star ratings) — *Best for freelancers & consultants*
+>    * **`ResponsiveHeroBanner`** (Cinematic banner with glassmorphic navigation) — *Best for tech founders*
+>    * *(Or ambient background: `AuroraBackground` with `TextGenerateEffect`)*
+> 
+> 4. **Delivery Format**:
+>    * **React + Vite + Tailwind CSS (TypeScript)** (Default full modular project)
+>    * **Instant Standalone Single-File HTML** (Zero-dependency, open immediately in browser)*"
+
+Wait for user response (or proceed if already specified).
+
+### Step 3: Component Assembly & Composition
+Assemble the codebase using the verified primitives in `components-library/` and verified recipes in `references/21st-dev-catalog.md`.
+
+### Step 4: Code Generation
+Generate complete, error-free code without placeholders like `// TODO: implement this later`. All interactive elements (copy buttons, theme toggles, mobile menus, video modals) must be fully functional.
+
+### Step 5: Verification & Delivery Instructions
+1. Run build verification if using React/Vite:
    ```bash
    npm install
+   npm run build
+   ```
+2. Provide simple run commands:
+   ```bash
    npm run dev
    ```
-3. Highlight where the user can customize text, images, and project links.
+3. For single-file HTML, instruct the user to open `index.html` directly in their browser or serve with:
+   ```bash
+   python scripts/serve.py
+   ```
 
 ---
 
-## 📚 Supporting References
+## 📚 Supporting Skill References
 
-* [references/questionnaire.md](./references/questionnaire.md) — 3-batch fallback intake questions.
-* [references/prompt-library.md](./references/prompt-library.md) — 21st.dev, Aceternity, and OriginUI React TSX patterns.
-* [references/design-systems.md](./references/design-systems.md) — Visual styles, palettes, and theme architectures.
-* [references/archetypes.md](./references/archetypes.md) — Role-specific section blueprints.
+* [references/design-systems.md](./references/design-systems.md) — Color palettes, typography pairs, and theme architectures.
+* [references/archetypes.md](./references/archetypes.md) — Section blueprints for Developers, Video Editors, Designers, etc.
+* [references/questionnaire.md](./references/questionnaire.md) — 3-batch intake questionnaire.
+* [references/prompt-library.md](./references/prompt-library.md) — Ready-to-use component TSX patterns.
+* [references/21st-dev-catalog.md](./references/21st-dev-catalog.md) — Master catalog recipes and links.
+* [components-library/catalog/INDEX.md](./components-library/catalog/INDEX.md) — Master index of 11,750+ 21st.dev components.

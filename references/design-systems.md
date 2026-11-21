@@ -151,6 +151,33 @@ Every portfolio generated should include dual-mode support by default using Tail
 
 ---
 
+## 🌐 Curated Template & Component Ecosystems
+
+The AI is encouraged to draw inspiration from and implement patterns pioneered by top-tier modern template ecosystems:
+
+### 1. VibeUI (`vibeui.dev`)
+* **Signature Aesthetic**: Tactile physical depth, layered card stacks, floating pill control docks, frosted glassmorphic navigation, and high-conversion badge chips.
+* **Component Patterns**:
+  * Floating action docks pinned to viewport bottom with micro-scaling icons.
+  * Layered card stacks with staggered reveal on scroll.
+  * Status pills with animated radar pulse rings.
+
+### 2. Trical (`trical.so`)
+* **Signature Aesthetic**: Swiss editorial minimalism, high-contrast monochrome typography, delicate hairline separator rules, and structured case-study dossiers.
+* **Component Patterns**:
+  * Two-column editorial case study splits (large headline on left, structured metric table and description on right).
+  * Hover-to-preview project lists where moving the cursor displays a floating project thumbnail preview.
+  * Clean typographic experience timeline with strict date alignment.
+
+### 3. Motion Site (`motion.site.ai`)
+* **Signature Aesthetic**: Kinetic typography, smooth spring physics, staggered word and character entrances, and continuous ambient interaction.
+* **Component Patterns**:
+  * Spring-physics hover effects (`transition-all duration-500 [transition-timing-function:cubic-bezier(0.16,1,0.3,1)]`).
+  * Staggered text reveals where each headline word slides up from a masked container.
+  * Magnetic buttons that subtly follow cursor velocity before snapping back.
+
+---
+
 ## 📐 Responsive Grid & Layout Rules
 
 1. **Max Width Container**: Standardize on `max-w-5xl` or `max-w-6xl mx-auto px-4 sm:px-6 lg:px-8` for optimal reading line length.
