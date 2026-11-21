@@ -1,0 +1,110 @@
+# 21st.dev Components: Documentation, Guides & Step-by-Step Layouts
+
+> Documentation layouts, process roadmaps, step-by-step onboarding walkthroughs, and technical manuals from 21st.dev.
+
+**Total Components Indexed**: `85`
+
+---
+
+## 🛠️ How to Use Any Component in Your Portfolio
+
+1. **Install via shadcn CLI** in your React + Vite project:
+   ```bash
+   npx shadcn@latest add "<Registry-URL>"
+   ```
+2. **Or direct prompt the AI**: Ask the AI to inspect and adapt any of the components listed below into your project!
+
+---
+
+## 📋 Component Registry
+
+| # | Component Name | Author | shadcn Install Command | 21st.dev Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **01** | [Shadcn Studio Onboarding Feed 01](https://21st.dev/@clevision/components/shadcn-studio-onboarding-feed-01) | `clevision` | `npx shadcn@latest add "https://21st.dev/r/clevision/shadcn-studio-onboarding-feed-01"` | [View Component](https://21st.dev/@clevision/components/shadcn-studio-onboarding-feed-01) |
+| **02** | [3D Frosted Glass Dock](https://21st.dev/@ghufrnainun/components/3d-frosted-glass-dock) | `ghufrnainun` | `npx shadcn@latest add "https://21st.dev/r/ghufrnainun/3d-frosted-glass-dock"` | [View Component](https://21st.dev/@ghufrnainun/components/3d-frosted-glass-dock) |
+| **03** | [Onboarding](https://21st.dev/@aadixc0de/components/onboarding) | `aadixc0de` | `npx shadcn@latest add "https://21st.dev/r/aadixc0de/onboarding"` | [View Component](https://21st.dev/@aadixc0de/components/onboarding) |
+| **04** | [Cd Steps Path](https://21st.dev/@vovalopuh13/components/cd-steps-path) | `vovalopuh13` | `npx shadcn@latest add "https://21st.dev/r/vovalopuh13/cd-steps-path"` | [View Component](https://21st.dev/@vovalopuh13/components/cd-steps-path) |
+| **05** | [Steps](https://21st.dev/@mahmoudilyan/components/steps) | `mahmoudilyan` | `npx shadcn@latest add "https://21st.dev/r/mahmoudilyan/steps"` | [View Component](https://21st.dev/@mahmoudilyan/components/steps) |
+| **06** | [Pixel Perfect Shop Onboarding](https://21st.dev/@aloksivastava1025/components/pixel-perfect-shop-onboarding) | `aloksivastava1025` | `npx shadcn@latest add "https://21st.dev/r/aloksivastava1025/pixel-perfect-shop-onboarding"` | [View Component](https://21st.dev/@aloksivastava1025/components/pixel-perfect-shop-onboarding) |
+| **07** | [Document Viewer](https://21st.dev/@aadixc0de/components/document-viewer) | `aadixc0de` | `npx shadcn@latest add "https://21st.dev/r/aadixc0de/document-viewer"` | [View Component](https://21st.dev/@aadixc0de/components/document-viewer) |
+| **08** | [Cue Pixel Perfect Shop Onboarding](https://21st.dev/@aloksivastava1025/components/cue-pixel-perfect-shop-onboarding) | `aloksivastava1025` | `npx shadcn@latest add "https://21st.dev/r/aloksivastava1025/cue-pixel-perfect-shop-onboarding"` | [View Component](https://21st.dev/@aloksivastava1025/components/cue-pixel-perfect-shop-onboarding) |
+| **09** | [Live Activity Dock](https://21st.dev/@dhxwhy/components/live-activity-dock) | `dhxwhy` | `npx shadcn@latest add "https://21st.dev/r/dhxwhy/live-activity-dock"` | [View Component](https://21st.dev/@dhxwhy/components/live-activity-dock) |
+| **10** | [Ezpz Type Steps](https://21st.dev/@ezam0000/components/ezpz-type-steps) | `ezam0000` | `npx shadcn@latest add "https://21st.dev/r/ezam0000/ezpz-type-steps"` | [View Component](https://21st.dev/@ezam0000/components/ezpz-type-steps) |
+| **11** | [Steps](https://21st.dev/@michaelvereb/components/steps) | `michaelvereb` | `npx shadcn@latest add "https://21st.dev/r/michaelvereb/steps"` | [View Component](https://21st.dev/@michaelvereb/components/steps) |
+| **12** | [Steps](https://21st.dev/@adit-firdaus/components/steps) | `adit-firdaus` | `npx shadcn@latest add "https://21st.dev/r/adit-firdaus/steps"` | [View Component](https://21st.dev/@adit-firdaus/components/steps) |
+| **13** | [Mac Style Floating Dock](https://21st.dev/@themeocean/components/mac-style-floating-dock) | `themeocean` | `npx shadcn@latest add "https://21st.dev/r/themeocean/mac-style-floating-dock"` | [View Component](https://21st.dev/@themeocean/components/mac-style-floating-dock) |
+| **14** | [Glass Dock](https://21st.dev/@deepraj21/components/glass-dock) | `deepraj21` | `npx shadcn@latest add "https://21st.dev/r/deepraj21/glass-dock"` | [View Component](https://21st.dev/@deepraj21/components/glass-dock) |
+| **15** | [Steps](https://21st.dev/@abhishek-mallick/components/steps) | `abhishek-mallick` | `npx shadcn@latest add "https://21st.dev/r/abhishek-mallick/steps"` | [View Component](https://21st.dev/@abhishek-mallick/components/steps) |
+| **16** | [Roadmap 1](https://21st.dev/@shadcnstore/components/roadmap-1) | `shadcnstore` | `npx shadcn@latest add "https://21st.dev/r/shadcnstore/roadmap-1"` | [View Component](https://21st.dev/@shadcnstore/components/roadmap-1) |
+| **17** | [Dock](https://21st.dev/@luv-jeri_c92deb60/components/dock) | `luv-jeri_c92deb60` | `npx shadcn@latest add "https://21st.dev/r/luv-jeri_c92deb60/dock"` | [View Component](https://21st.dev/@luv-jeri_c92deb60/components/dock) |
+| **18** | [Onboarding Checklist](https://21st.dev/@ssychui/components/onboarding-checklist) | `ssychui` | `npx shadcn@latest add "https://21st.dev/r/ssychui/onboarding-checklist"` | [View Component](https://21st.dev/@ssychui/components/onboarding-checklist) |
+| **19** | [Onboarding 5](https://21st.dev/@olewandowski1/components/onboarding-5) | `olewandowski1` | `npx shadcn@latest add "https://21st.dev/r/olewandowski1/onboarding-5"` | [View Component](https://21st.dev/@olewandowski1/components/onboarding-5) |
+| **20** | [Onboarding 4](https://21st.dev/@olewandowski1/components/onboarding-4) | `olewandowski1` | `npx shadcn@latest add "https://21st.dev/r/olewandowski1/onboarding-4"` | [View Component](https://21st.dev/@olewandowski1/components/onboarding-4) |
+| **21** | [Onboarding9](https://21st.dev/@ziegfiroyt/components/onboarding9) | `ziegfiroyt` | `npx shadcn@latest add "https://21st.dev/r/ziegfiroyt/onboarding9"` | [View Component](https://21st.dev/@ziegfiroyt/components/onboarding9) |
+| **22** | [Onboarding 3](https://21st.dev/@olewandowski1/components/onboarding-3) | `olewandowski1` | `npx shadcn@latest add "https://21st.dev/r/olewandowski1/onboarding-3"` | [View Component](https://21st.dev/@olewandowski1/components/onboarding-3) |
+| **23** | [Onboarding3](https://21st.dev/@ziegfiroyt/components/onboarding3) | `ziegfiroyt` | `npx shadcn@latest add "https://21st.dev/r/ziegfiroyt/onboarding3"` | [View Component](https://21st.dev/@ziegfiroyt/components/onboarding3) |
+| **24** | [Onboarding 6](https://21st.dev/@olewandowski1/components/onboarding-6) | `olewandowski1` | `npx shadcn@latest add "https://21st.dev/r/olewandowski1/onboarding-6"` | [View Component](https://21st.dev/@olewandowski1/components/onboarding-6) |
+| **25** | [Onboarding 1](https://21st.dev/@olewandowski1/components/onboarding-1) | `olewandowski1` | `npx shadcn@latest add "https://21st.dev/r/olewandowski1/onboarding-1"` | [View Component](https://21st.dev/@olewandowski1/components/onboarding-1) |
+| **26** | [Onboarding 07](https://21st.dev/@ephraimduncan/components/onboarding-07) | `ephraimduncan` | `npx shadcn@latest add "https://21st.dev/r/ephraimduncan/onboarding-07"` | [View Component](https://21st.dev/@ephraimduncan/components/onboarding-07) |
+| **27** | [Onboarding 06](https://21st.dev/@ephraimduncan/components/onboarding-06) | `ephraimduncan` | `npx shadcn@latest add "https://21st.dev/r/ephraimduncan/onboarding-06"` | [View Component](https://21st.dev/@ephraimduncan/components/onboarding-06) |
+| **28** | [Roadmap 3](https://21st.dev/@olewandowski1/components/roadmap-3) | `olewandowski1` | `npx shadcn@latest add "https://21st.dev/r/olewandowski1/roadmap-3"` | [View Component](https://21st.dev/@olewandowski1/components/roadmap-3) |
+| **29** | [Onboarding 05](https://21st.dev/@ephraimduncan/components/onboarding-05) | `ephraimduncan` | `npx shadcn@latest add "https://21st.dev/r/ephraimduncan/onboarding-05"` | [View Component](https://21st.dev/@ephraimduncan/components/onboarding-05) |
+| **30** | [Onboarding 04](https://21st.dev/@ephraimduncan/components/onboarding-04) | `ephraimduncan` | `npx shadcn@latest add "https://21st.dev/r/ephraimduncan/onboarding-04"` | [View Component](https://21st.dev/@ephraimduncan/components/onboarding-04) |
+| **31** | [Roadmap 1](https://21st.dev/@olewandowski1/components/roadmap-1) | `olewandowski1` | `npx shadcn@latest add "https://21st.dev/r/olewandowski1/roadmap-1"` | [View Component](https://21st.dev/@olewandowski1/components/roadmap-1) |
+| **32** | [Onboarding 03](https://21st.dev/@ephraimduncan/components/onboarding-03) | `ephraimduncan` | `npx shadcn@latest add "https://21st.dev/r/ephraimduncan/onboarding-03"` | [View Component](https://21st.dev/@ephraimduncan/components/onboarding-03) |
+| **33** | [Roadmap 4](https://21st.dev/@olewandowski1/components/roadmap-4) | `olewandowski1` | `npx shadcn@latest add "https://21st.dev/r/olewandowski1/roadmap-4"` | [View Component](https://21st.dev/@olewandowski1/components/roadmap-4) |
+| **34** | [Onboarding 02](https://21st.dev/@ephraimduncan/components/onboarding-02) | `ephraimduncan` | `npx shadcn@latest add "https://21st.dev/r/ephraimduncan/onboarding-02"` | [View Component](https://21st.dev/@ephraimduncan/components/onboarding-02) |
+| **35** | [Onboarding 01](https://21st.dev/@ephraimduncan/components/onboarding-01) | `ephraimduncan` | `npx shadcn@latest add "https://21st.dev/r/ephraimduncan/onboarding-01"` | [View Component](https://21st.dev/@ephraimduncan/components/onboarding-01) |
+| **36** | [Document Color Picker](https://21st.dev/@extend/components/document-color-picker) | `extend` | `npx shadcn@latest add "https://21st.dev/r/extend/document-color-picker"` | [View Component](https://21st.dev/@extend/components/document-color-picker) |
+| **37** | [Onboarding Checklist Drawer](https://21st.dev/@shadcnspace/components/onboarding-checklist-drawer) | `shadcnspace` | `npx shadcn@latest add "https://21st.dev/r/shadcnspace/onboarding-checklist-drawer"` | [View Component](https://21st.dev/@shadcnspace/components/onboarding-checklist-drawer) |
+| **38** | [Onboarding Step Tracker](https://21st.dev/@cnippet-dev/components/onboarding-step-tracker) | `cnippet-dev` | `npx shadcn@latest add "https://21st.dev/r/cnippet-dev/onboarding-step-tracker"` | [View Component](https://21st.dev/@cnippet-dev/components/onboarding-step-tracker) |
+| **39** | [Dock](https://21st.dev/@lyanchouss/components/dock) | `lyanchouss` | `npx shadcn@latest add "https://21st.dev/r/lyanchouss/dock"` | [View Component](https://21st.dev/@lyanchouss/components/dock) |
+| **40** | [Wizard Steps](https://21st.dev/@ddoemonn/components/wizard-steps) | `ddoemonn` | `npx shadcn@latest add "https://21st.dev/r/ddoemonn/wizard-steps"` | [View Component](https://21st.dev/@ddoemonn/components/wizard-steps) |
+| **41** | [Task Steps](https://21st.dev/@ddoemonn/components/task-steps) | `ddoemonn` | `npx shadcn@latest add "https://21st.dev/r/ddoemonn/task-steps"` | [View Component](https://21st.dev/@ddoemonn/components/task-steps) |
+| **42** | [Macos Dock](https://21st.dev/@ssychui/components/macos-dock) | `ssychui` | `npx shadcn@latest add "https://21st.dev/r/ssychui/macos-dock"` | [View Component](https://21st.dev/@ssychui/components/macos-dock) |
+| **43** | [Dock](https://21st.dev/@starc007/components/dock) | `starc007` | `npx shadcn@latest add "https://21st.dev/r/starc007/dock"` | [View Component](https://21st.dev/@starc007/components/dock) |
+| **44** | [Beui Dock](https://21st.dev/@starc007/components/beui-dock) | `starc007` | `npx shadcn@latest add "https://21st.dev/r/starc007/beui-dock"` | [View Component](https://21st.dev/@starc007/components/beui-dock) |
+| **45** | [Dock Nav](https://21st.dev/@soralabs/components/dock-nav) | `soralabs` | `npx shadcn@latest add "https://21st.dev/r/soralabs/dock-nav"` | [View Component](https://21st.dev/@soralabs/components/dock-nav) |
+| **46** | [Floating Dock](https://21st.dev/@manuarora700/components/floating-dock) | `manuarora700` | `npx shadcn@latest add "https://21st.dev/r/manuarora700/floating-dock"` | [View Component](https://21st.dev/@manuarora700/components/floating-dock) |
+| **47** | [Agent Dock](https://21st.dev/@dqnamo/components/agent-dock) | `dqnamo` | `npx shadcn@latest add "https://21st.dev/r/dqnamo/agent-dock"` | [View Component](https://21st.dev/@dqnamo/components/agent-dock) |
+| **48** | [Toolbar Dock](https://21st.dev/@ruixen.ui/components/toolbar-dock) | `ruixen.ui` | `npx shadcn@latest add "https://21st.dev/r/ruixen.ui/toolbar-dock"` | [View Component](https://21st.dev/@ruixen.ui/components/toolbar-dock) |
+| **49** | [Markdown](https://21st.dev/@serafimcloud/components/markdown) | `serafimcloud` | `npx shadcn@latest add "https://21st.dev/r/serafimcloud/markdown"` | [View Component](https://21st.dev/@serafimcloud/components/markdown) |
+| **50** | [Onboarding Dialog](https://21st.dev/@patrick-xin/components/onboarding-dialog) | `patrick-xin` | `npx shadcn@latest add "https://21st.dev/r/patrick-xin/onboarding-dialog"` | [View Component](https://21st.dev/@patrick-xin/components/onboarding-dialog) |
+| **51** | [Expanding Search Dock Shadcnui](https://21st.dev/@moumensoliman/components/expanding-search-dock-shadcnui) | `moumensoliman` | `npx shadcn@latest add "https://21st.dev/r/moumensoliman/expanding-search-dock-shadcnui"` | [View Component](https://21st.dev/@moumensoliman/components/expanding-search-dock-shadcnui) |
+| **52** | [Apple Dock](https://21st.dev/@shadcnspace/components/apple-dock) | `shadcnspace` | `npx shadcn@latest add "https://21st.dev/r/shadcnspace/apple-dock"` | [View Component](https://21st.dev/@shadcnspace/components/apple-dock) |
+| **53** | [Onboarding Form](https://21st.dev/@ravikatiyar162/components/onboarding-form) | `ravikatiyar162` | `npx shadcn@latest add "https://21st.dev/r/ravikatiyar162/onboarding-form"` | [View Component](https://21st.dev/@ravikatiyar162/components/onboarding-form) |
+| **54** | [Floating Dock Navigation](https://21st.dev/@erikvalencia1/components/floating-dock-navigation) | `erikvalencia1` | `npx shadcn@latest add "https://21st.dev/r/erikvalencia1/floating-dock-navigation"` | [View Component](https://21st.dev/@erikvalencia1/components/floating-dock-navigation) |
+| **55** | [Onboarding Checklist](https://21st.dev/@ravikatiyar162/components/onboarding-checklist) | `ravikatiyar162` | `npx shadcn@latest add "https://21st.dev/r/ravikatiyar162/onboarding-checklist"` | [View Component](https://21st.dev/@ravikatiyar162/components/onboarding-checklist) |
+| **56** | [Onboarding](https://21st.dev/@ravikatiyar162/components/onboarding) | `ravikatiyar162` | `npx shadcn@latest add "https://21st.dev/r/ravikatiyar162/onboarding"` | [View Component](https://21st.dev/@ravikatiyar162/components/onboarding) |
+| **57** | [Onboarding Card](https://21st.dev/@ravikatiyar162/components/onboarding-card) | `ravikatiyar162` | `npx shadcn@latest add "https://21st.dev/r/ravikatiyar162/onboarding-card"` | [View Component](https://21st.dev/@ravikatiyar162/components/onboarding-card) |
+| **58** | [Gooey Dock](https://21st.dev/@ruixen.ui/components/gooey-dock) | `ruixen.ui` | `npx shadcn@latest add "https://21st.dev/r/ruixen.ui/gooey-dock"` | [View Component](https://21st.dev/@ruixen.ui/components/gooey-dock) |
+| **59** | [Tilted Dock](https://21st.dev/@ruixen.ui/components/tilted-dock) | `ruixen.ui` | `npx shadcn@latest add "https://21st.dev/r/ruixen.ui/tilted-dock"` | [View Component](https://21st.dev/@ruixen.ui/components/tilted-dock) |
+| **60** | [Dock Morph](https://21st.dev/@ruixen.ui/components/dock-morph) | `ruixen.ui` | `npx shadcn@latest add "https://21st.dev/r/ruixen.ui/dock-morph"` | [View Component](https://21st.dev/@ruixen.ui/components/dock-morph) |
+| **61** | [Dock](https://21st.dev/@ruixen.ui/components/dock) | `ruixen.ui` | `npx shadcn@latest add "https://21st.dev/r/ruixen.ui/dock"` | [View Component](https://21st.dev/@ruixen.ui/components/dock) |
+| **62** | [Mac Os Dock](https://21st.dev/@n38693842/components/mac-os-dock) | `n38693842` | `npx shadcn@latest add "https://21st.dev/r/n38693842/mac-os-dock"` | [View Component](https://21st.dev/@n38693842/components/mac-os-dock) |
+| **63** | [Onboarding Welcome Screen](https://21st.dev/@ravikatiyar162/components/onboarding-welcome-screen) | `ravikatiyar162` | `npx shadcn@latest add "https://21st.dev/r/ravikatiyar162/onboarding-welcome-screen"` | [View Component](https://21st.dev/@ravikatiyar162/components/onboarding-welcome-screen) |
+| **64** | [Steps](https://21st.dev/@anubra266/components/steps) | `anubra266` | `npx shadcn@latest add "https://21st.dev/r/anubra266/steps"` | [View Component](https://21st.dev/@anubra266/components/steps) |
+| **65** | [Roadmap Card](https://21st.dev/@beratberkayg/components/roadmap-card) | `beratberkayg` | `npx shadcn@latest add "https://21st.dev/r/beratberkayg/roadmap-card"` | [View Component](https://21st.dev/@beratberkayg/components/roadmap-card) |
+| **66** | [Onboarding Checklist](https://21st.dev/@chowlol202/components/onboarding-checklist) | `chowlol202` | `npx shadcn@latest add "https://21st.dev/r/chowlol202/onboarding-checklist"` | [View Component](https://21st.dev/@chowlol202/components/onboarding-checklist) |
+| **67** | [Dock Tabs](https://21st.dev/@designali-in/components/dock-tabs) | `designali-in` | `npx shadcn@latest add "https://21st.dev/r/designali-in/dock-tabs"` | [View Component](https://21st.dev/@designali-in/components/dock-tabs) |
+| **68** | [Dock](https://21st.dev/@badtzx0/components/dock) | `badtzx0` | `npx shadcn@latest add "https://21st.dev/r/badtzx0/dock"` | [View Component](https://21st.dev/@badtzx0/components/dock) |
+| **69** | [Minimal Dock](https://21st.dev/@jatin-yadav05/components/minimal-dock) | `jatin-yadav05` | `npx shadcn@latest add "https://21st.dev/r/jatin-yadav05/minimal-dock"` | [View Component](https://21st.dev/@jatin-yadav05/components/minimal-dock) |
+| **70** | [Doctor Live Chat Card](https://21st.dev/@ruixen.ui/components/doctor-live-chat-card) | `ruixen.ui` | `npx shadcn@latest add "https://21st.dev/r/ruixen.ui/doctor-live-chat-card"` | [View Component](https://21st.dev/@ruixen.ui/components/doctor-live-chat-card) |
+| **71** | [Onboarding Stages](https://21st.dev/@isaiahbjork/components/onboarding-stages) | `isaiahbjork` | `npx shadcn@latest add "https://21st.dev/r/isaiahbjork/onboarding-stages"` | [View Component](https://21st.dev/@isaiahbjork/components/onboarding-stages) |
+| **72** | [Dock](https://21st.dev/@cult-ui/components/dock) | `cult-ui` | `npx shadcn@latest add "https://21st.dev/r/cult-ui/dock"` | [View Component](https://21st.dev/@cult-ui/components/dock) |
+| **73** | [Message Dock](https://21st.dev/@isaiahbjork/components/message-dock) | `isaiahbjork` | `npx shadcn@latest add "https://21st.dev/r/isaiahbjork/message-dock"` | [View Component](https://21st.dev/@isaiahbjork/components/message-dock) |
+| **74** | [Docks](https://21st.dev/@ruixen.ui/components/docks) | `ruixen.ui` | `npx shadcn@latest add "https://21st.dev/r/ruixen.ui/docks"` | [View Component](https://21st.dev/@ruixen.ui/components/docks) |
+| **75** | [Mac Os Dock](https://21st.dev/@dhmnpunit/components/mac-os-dock) | `dhmnpunit` | `npx shadcn@latest add "https://21st.dev/r/dhmnpunit/mac-os-dock"` | [View Component](https://21st.dev/@dhmnpunit/components/mac-os-dock) |
+| **76** | [Animated Dock](https://21st.dev/@preetsuthar17/components/animated-dock) | `preetsuthar17` | `npx shadcn@latest add "https://21st.dev/r/preetsuthar17/animated-dock"` | [View Component](https://21st.dev/@preetsuthar17/components/animated-dock) |
+| **77** | [Dock Two](https://21st.dev/@anurag-mishra22/components/dock-two) | `anurag-mishra22` | `npx shadcn@latest add "https://21st.dev/r/anurag-mishra22/dock-two"` | [View Component](https://21st.dev/@anurag-mishra22/components/dock-two) |
+| **78** | [Dock](https://21st.dev/@dillionverma/components/dock) | `dillionverma` | `npx shadcn@latest add "https://21st.dev/r/dillionverma/dock"` | [View Component](https://21st.dev/@dillionverma/components/dock) |
+| **79** | [Dock](https://21st.dev/@ibelick/components/dock) | `ibelick` | `npx shadcn@latest add "https://21st.dev/r/ibelick/dock"` | [View Component](https://21st.dev/@ibelick/components/dock) |
+| **80** | [Newton Cradle Steps](https://21st.dev/@21st/components/newton-cradle-steps) | `21st` | `npx shadcn@latest add "https://21st.dev/r/21st/newton-cradle-steps"` | [View Component](https://21st.dev/@21st/components/newton-cradle-steps) |
+| **81** | [Lp Panel Document Export](https://21st.dev/@21st/components/lp-panel-document-export) | `21st` | `npx shadcn@latest add "https://21st.dev/r/21st/lp-panel-document-export"` | [View Component](https://21st.dev/@21st/components/lp-panel-document-export) |
+| **82** | [Lp Document Page Fan](https://21st.dev/@21st/components/lp-document-page-fan) | `21st` | `npx shadcn@latest add "https://21st.dev/r/21st/lp-document-page-fan"` | [View Component](https://21st.dev/@21st/components/lp-document-page-fan) |
+| **83** | [Voice Document Cloud](https://21st.dev/@21st/components/voice-document-cloud) | `21st` | `npx shadcn@latest add "https://21st.dev/r/21st/voice-document-cloud"` | [View Component](https://21st.dev/@21st/components/voice-document-cloud) |
+| **84** | [Document Transform](https://21st.dev/@21st/components/document-transform) | `21st` | `npx shadcn@latest add "https://21st.dev/r/21st/document-transform"` | [View Component](https://21st.dev/@21st/components/document-transform) |
+| **85** | [Agent Steps](https://21st.dev/@21st/components/agent-steps) | `21st` | `npx shadcn@latest add "https://21st.dev/r/21st/agent-steps"` | [View Component](https://21st.dev/@21st/components/agent-steps) |
+
+---
+*Catalog automatically scraped and generated from 21st.dev for Portfolio Maker.*

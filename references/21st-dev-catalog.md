@@ -1,7 +1,8 @@
 # 21st.dev & Aceternity Component Catalog & Composition Guide
 
-> **MANDATORY FOR THE AI AGENT**: Never generate flat, generic, plain Tailwind divs for major sections.
-> A portfolio must feel like a modern **Awwwards / 21st.dev / Aceternity** showcase. Assemble the site using the verified component primitives in `components-library/` or search the web for complementary 21st.dev components.
+> **MANDATORY RULES FOR THE AI AGENT**:
+> 1. **Never generate flat, generic, plain Tailwind divs for major sections.** Assemble the site using the verified component primitives in `components-library/`.
+> 2. **STRICTLY BAN THE PURPLE NEON "AI SLOP" STYLE**: Do NOT use cliché purple/violet/magenta gradient text or giant purple background glow blobs. Use Titanium monochrome, crisp white typography, subtle neutral borders (`border-white/[0.08]`), and refined single accents (Cobalt, Emerald, or Warm Amber).
 
 ---
 

@@ -46,6 +46,34 @@ The repository includes ready-to-import React TypeScript components inside [`com
 * **`CopyEmailButton.tsx`**: OriginUI-style 1-click email copy with animated tooltip toast.
 * **`ThemeToggle.tsx`**: Smooth sun/moon icon toggle with persistent `localStorage` dark/light modes.
 
+---
+
+## 🗂️ Master 21st.dev Catalog (9,600+ Components Indexed)
+
+The skill includes a complete indexed catalog directly from **21st.dev** in [`components-library/catalog/INDEX.md`](./components-library/catalog/INDEX.md) covering every component category with direct links and `npx shadcn` install commands:
+
+* [**Heroes & Headers**](./components-library/catalog/heroes.md) (396 components)
+* [**Buttons & Triggers**](./components-library/catalog/buttons.md) (422 components)
+* [**Backgrounds & Shaders**](./components-library/catalog/backgrounds.md) (470 components)
+* [**Features & Bento Grids**](./components-library/catalog/features.md) (855 components)
+* [**Galleries & Carousels**](./components-library/catalog/galleries.md) (318 components)
+* [**Navigation & Docks**](./components-library/catalog/navigation-menus.md) (351 components)
+* [**Sky Arts & ASCII Illustrations**](./components-library/catalog/sky-arts.md) (298 components)
+* [**Call to Action (CTA)**](./components-library/catalog/call-to-action.md) (76 components)
+* [**Client Comparisons & Sliders**](./components-library/catalog/client-comparisons.md) (44 components)
+* [**Footers**](./components-library/catalog/footers.md) (74 components)
+* [**Pricing Tiers**](./components-library/catalog/pricing-sections.md) (79 components)
+* [**FAQs & Accordions**](./components-library/catalog/faqs.md) (173 components)
+* [**Announcements & Alerts**](./components-library/catalog/announcements.md) (183 components)
+* [**Terminals & Markups**](./components-library/catalog/markups.md) (96 components)
+* [**Maps & 3D Globes**](./components-library/catalog/maps.md) (77 components)
+* [**Gradients & Glows**](./components-library/catalog/gradients.md) (131 components)
+* [**Borders & Beams**](./components-library/catalog/borders.md) (52 components)
+* [**Hooks & Utilities**](./components-library/catalog/hooks.md) (230 components)
+* [**Images & Avatars**](./components-library/catalog/images.md) (190 components)
+* [**Docs & Step-by-Steps**](./components-library/catalog/docs.md) (85 components)
+* [**Testimonials & Social Proof**](./components-library/catalog/testimonials.md) (112 components)
+
 *(See [references/21st-dev-catalog.md](./references/21st-dev-catalog.md) for full recipe combinations).*
 
 ---

@@ -4,23 +4,40 @@ This guide details visual styles, typography, color palettes, and component desi
 
 ---
 
+## 🚫 Anti-AI-Slop Visual Guidelines (STRICT RULE)
+
+> **DO NOT USE THE CLICHÉ PURPLE NEON GRADIENT STYLE.**
+>
+> **Banned tropes:**
+> ❌ Purple-to-pink / violet-to-magenta gradient text on headlines (`from-purple-500 via-indigo-500 to-pink-500`).
+> ❌ Huge blurry purple orbs floating in background margins.
+> ❌ Over-saturated neon laser synthwave card borders.
+>
+> **Approved High-End Palettes (Clean, Human, Production-Grade):**
+> 1. **Titanium Monochrome (Swiss Dark/Light)**: Deep carbon `#09090b` canvas, crisp white headers, zinc muted body (`#a1a1aa`), hairline white borders (`border-white/[0.08]`), and pure white subtle spotlight glow (`rgba(255, 255, 255, 0.08)`).
+> 2. **Precision Emerald & Slate**: Deep slate/zinc `#09090b`, clean emerald status badge (`#10b981`), monochrome project cards with subtle mint hover accents.
+> 3. **International Electric Cobalt**: Clean high-contrast typography with deep royal blue / electric cobalt (`#2563eb`) interaction targets and buttons.
+> 4. **Warm Architectural Sand & Cream**: Editorial cream/stone (`#fdfbf7` or `#1c1917`) with rich espresso typography and warm amber/bronze (`#d97706`) accents.
+
+---
+
 ## 🎨 Aesthetic Styles
 
 ### 1. Sleek Tech / Dark Bento (Default for Engineers & Tech Creatives)
-* **Inspiration**: 21st.dev, Linear, Raycast, Vercel, Aceternity UI.
+* **Inspiration**: 21st.dev, Linear, Raycast, Vercel, Supabase.
 * **Palette**:
   * Dark Canvas: `#09090b` (Zinc 950) or `#030712` (Gray 950)
-  * Dark Card Background: `#18181b` (Zinc 900) with `backdrop-blur-md`
-  * Card Border: `border-zinc-800` or `border-white/10`
-  * Primary Accent: Violet `#8b5cf6`, Cyan `#06b6d4`, or Emerald `#10b981`
+  * Dark Card Background: `#121215` (Zinc 900) with `backdrop-blur-md`
+  * Card Border: `border-white/[0.08]` (hairline subtle contrast)
+  * Primary Accent: Titanium White, Emerald `#10b981`, or Electric Cobalt `#2563eb` (NO purple neon gradients!)
   * Light Mode counterpart: Canvas `#ffffff`, Cards `#f4f4f5`, Borders `#e4e4e7`
 * **Typography**:
   * Font Sans: `Inter`, `Plus Jakarta Sans`, or `Geist Sans`
   * Font Mono: `JetBrains Mono` or `Fira Code`
 * **Signature Elements**:
   * Bento grid with asymmetric tile spans.
-  * Radial gradient spotlight hover effect tracking cursor.
-  * Pulsing green availability badge (`bg-emerald-500/20 text-emerald-400 border border-emerald-500/30`).
+  * Radial gradient spotlight hover effect tracking cursor with subtle white or slate glow (`rgba(255, 255, 255, 0.08)`).
+  * Pulsing green availability badge (`bg-emerald-500/10 text-emerald-400 border border-emerald-500/20`).
   * Terminal window with simulated bash commands or live system stats.
 
 ---

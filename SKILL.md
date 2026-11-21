@@ -7,11 +7,32 @@ description: >-
   mandatory style & theme preference questioning (Light, Dark, or Dual mode; Dark Bento, Minimalist,
   etc.), and builds a production-grade React + Vite + Tailwind CSS portfolio by default using modern
   component patterns inspired by 21st.dev, OriginUI, Aceternity/Animos, Flows, and Micrograph.
+  Enforces strict anti-AI-slop design rules (no generic purple neon gradients).
 ---
 
 # Portfolio Maker Skill
 
 The **Portfolio Maker** skill turns any AI into an elite design engineer and portfolio consultant. It systematically extracts the user's background, aligns on visual preferences, and generates a modern, production-grade **React + Vite + Tailwind CSS** portfolio website by default.
+
+---
+
+## 🚫 STRICT DESIGN RULE: Banish the Purple Neon "AI Slop" Look
+
+> [!CAUTION]
+> **NEVER use the cliché purple/violet/magenta neon gradient "AI Slop" style.**
+> The trademark signs of lazy AI web design are:
+> 1. Giant purple/indigo blurry blobs floating in the background (`bg-purple-500/20 rounded-full blur-3xl`).
+> 2. Cheap purple-to-pink gradient text on every headline (`bg-gradient-to-r from-purple-500 via-indigo-500 to-pink-500`).
+> 3. Tacky neon synthwave laser card borders.
+>
+> **What to use instead (Human-Crafted, Elite Aesthetics):**
+> * **Pure Swiss Monochrome & Tactile Grays**: Deep carbon canvas (`#09090b` or `#050505`), hairline white borders (`border-white/[0.08]`), clean white typography with zinc muted subheadings (`text-zinc-400`).
+> * **Intentional, Single-Accent Palettes**:
+>   * *Titanium & Ice*: Pure monochrome with crisp white/silver borders and subtle white spotlight glow (`rgba(255, 255, 255, 0.08)`).
+>   * *Minimalist Emerald / Mint*: Clean dark canvas with subtle emerald dot status badges (`#10b981`).
+>   * *Electric Cobalt / International Klein Blue*: High-trust `#2563eb` accents on interactive buttons.
+>   * *Warm Bronze / Amber*: Refined luxury agency warmth (`#f59e0b` or `#d97706`).
+> * **Design Depth Through Typography & Layout**: Rely on bold typographic hierarchy, generous whitespace, asymmetric bento spans, and physical micro-interactions rather than cheap neon gradient text.
 
 ---
 
@@ -85,10 +106,20 @@ Ask the user:
 >    * **Light Mode** (Crisp, clean, high-readability).
 >    * **Dual Mode (Recommended)** (Both Light and Dark mode with an interactive toggle switch that remembers preferences in `localStorage`).
 > 
-> 3. **Signature 21st.dev / Aceternity Components**:
->    Which interactive elements would you like to feature?
->    * **Hero**: `AuroraBackground` (flowing northern lights) OR `Spotlight Hero` OR `TextGenerateEffect` (blur-in text).
->    * **Projects**: `SpotlightCard` (mouse glow) OR `Card3D` (perspective tilt) OR `BorderBeam` (moving neon border) OR `Meteors` (shooting stars).
+> 3. **Signature 21st.dev Hero & Component Selection**:
+>    Which hero section and interactive elements would you like to feature?
+>    * **Hero Section (from `components-library/heroes/`)**:
+>      * **`ImageStreamHero`** (Vanishing-point streaming rails) — *Best for video editors & visual creators*
+>      * **`ProductRailGallery`** (Interactive clothing rack with swinging hangers) — *Best for e-commerce & streetwear*
+>      * **`TiltedGridHero`** (Curved 3D image stream bending towards viewer) — *Best for UI/UX & photographers*
+>      * **`PerspectiveTunnelHero`** (3D Z-axis spatial tunnel with metrics) — *Best for software & systems engineers*
+>      * **`PrismHero`** (Procedural chromatic crystal refraction) — *Best for art directors & luxury portfolios*
+>      * **`TigerTearRevealHero`** (Interactive paper tear slogan reveal) — *Best for high-impact creatives & agencies*
+>      * **`AgencyHero01`** (Agency hero with trust avatars & star ratings) — *Best for freelancers & consultants*
+>      * **`ResponsiveHeroBanner`** (Cinematic banner with glassmorphic navigation) — *Best for tech founders & leads*
+>      * **`CenteredImageFanHero`** (Highlighted headline with 3-image fan collage) — *Best for product designers*
+>      * *(Or ambient background: `AuroraBackground` with `TextGenerateEffect`)*
+>    * **Project Cards**: `SpotlightCard` (mouse glow) OR `Card3D` (perspective tilt) OR `BorderBeam` (moving neon border) OR `Meteors` (shooting stars).
 >    * **Interactive Showcase**: `TerminalWidget` (CLI) OR `BeforeAfterSlider` (image/video comparison) OR `InfiniteMarquee` (logo/tech ticker) OR `VideoModal` (popup showreel).
 >    * **Controls**: `FloatingNav` (floating pill navbar) + `ShimmerButton` (shimmering CTA button).
 > 
@@ -106,14 +137,15 @@ Wait for the user's response (or proceed using their stated preferences if they 
 > **RULE: NEVER generate generic, flat Tailwind HTML divs for main sections.**
 > Generic boilerplate looks amateurish. A portfolio must look like an award-winning 21st.dev / Aceternity showcase.
 > 
-> Assemble the portfolio by using the production-ready component primitives from `components-library/` (or search the web for the latest 21st.dev TSX patterns):
+> Assemble the portfolio by using the production-ready component primitives from `components-library/` or query the complete **21st.dev Master Catalog** in [`components-library/catalog/INDEX.md`](./components-library/catalog/INDEX.md) (indexing 9,600+ components with `npx shadcn` install commands across all 21 categories: Heroes, Backgrounds, Buttons, Galleries, Features, FAQs, Docks, Pricing, etc.):
 > 
-> * **Backgrounds**: `components-library/backgrounds/AuroraBackground.tsx`
-> * **Cards**: `components-library/cards/SpotlightCard.tsx`, `Card3D.tsx`, `BorderBeam.tsx`, `Meteors.tsx`
-> * **Layouts & Media**: `components-library/sections/BentoGrid.tsx`, `InfiniteMarquee.tsx`, `BeforeAfterSlider.tsx`, `VideoModal.tsx`, `TerminalWidget.tsx`
-> * **UI & Navigation**: `components-library/ui/FloatingNav.tsx`, `ShimmerButton.tsx`, `TextGenerateEffect.tsx`, `CopyEmailButton.tsx`, `ThemeToggle.tsx`
+> * **Heroes (from 21st.dev)**: `components-library/heroes/` (`ImageStreamHero.tsx`, `ProductRailGallery.tsx`, `TiltedGridHero.tsx`, `PerspectiveTunnelHero.tsx`, `PrismHero.tsx`, `TigerTearRevealHero.tsx`, `AgencyHero01.tsx`, `ResponsiveHeroBanner.tsx`, `CenteredImageFanHero.tsx` + 396 more in `components-library/catalog/heroes.md`)
+> * **Backgrounds**: `components-library/backgrounds/AuroraBackground.tsx` (+ 470 more in `components-library/catalog/backgrounds.md`)
+> * **Cards & Features**: `components-library/cards/` (SpotlightCard, Card3D, BorderBeam, Meteors + 855 more in `components-library/catalog/features.md`)
+> * **Layouts & Media**: `components-library/sections/` (BentoGrid, InfiniteMarquee, BeforeAfterSlider, VideoModal, TerminalWidget + 318 more in `components-library/catalog/galleries.md`)
+> * **UI & Navigation**: `components-library/ui/` (FloatingNav, ShimmerButton, TextGenerateEffect, CopyEmailButton, ThemeToggle + 422 buttons & 351 navbars in `catalog/`)
 > 
-> Consult [references/21st-dev-catalog.md](./references/21st-dev-catalog.md) for proven composition recipes. If a user asks for a unique interaction not in the local library, search the web to fetch the exact 21st.dev / Aceternity React implementation.
+> Consult [references/21st-dev-catalog.md](./references/21st-dev-catalog.md) and [`components-library/catalog/INDEX.md`](./components-library/catalog/INDEX.md) for proven composition recipes and full links.
 
 ---
 
