@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elena Chen | Senior Product Designer & Design Systems</title>
+  <meta name="description" content="Product Designer crafting thoughtful digital experiences, scalable design systems, and delightful interfaces for millions of users.">
+  
+  <!-- Google Fonts: Cormorant Garamond & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#fafaf9] dark:bg-[#121212] text-zinc-800 dark:text-zinc-200 antialiased min-h-screen selection:bg-zinc-900 selection:text-white dark:selection:bg-white dark:selection:text-zinc-900 transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-[#fafaf9]/80 dark:bg-[#121212]/80 border-b border-zinc-200 dark:border-zinc-800">
+    <div class="max-w-4xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="font-serif text-2xl font-bold tracking-tight text-zinc-900 dark:text-white">
+        Elena Chen
+      </a>
+
+      <nav class="flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+        <a href="#work" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Case Studies</a>
+        <a href="#about" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Philosophy</a>
+        <a href="#contact" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Contact</a>
+        
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors" aria-label="Toggle Theme">
+          <i data-lucide="sun" id="theme-light-icon" class="w-4 h-4 hidden"></i>
+          <i data-lucide="moon" id="theme-dark-icon" class="w-4 h-4"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-16 md:py-24 space-y-28">
+
+    <!-- HERO SECTION -->
+    <section class="space-y-6">
+      <div class="text-xs uppercase tracking-widest font-mono text-zinc-500">Product Designer • Systems Thinker</div>
+      <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tight text-zinc-900 dark:text-white leading-[1.08]">
+        Designing human interfaces with clarity, craft, and intention.
+      </h1>
+      <p class="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl leading-relaxed">
+        Currently leading design systems at <span class="text-zinc-900 dark:text-white font-medium underline underline-offset-4">Linearity Labs</span>. Previously designed fintech experiences used by over 3 million active investors.
+      </p>
+
+      <div class="flex items-center gap-6 pt-4 text-sm font-medium">
+        <a href="#work" class="inline-flex items-center gap-2 pb-1 border-b-2 border-zinc-900 dark:border-white text-zinc-900 dark:text-white hover:opacity-75 transition-opacity">
+          <span>View Selected Works</span>
+          <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+        </a>
+        <a href="mailto:elena.chen@example.com" class="text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">
+          elena.chen@example.com
+        </a>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES SECTION -->
+    <section id="work" class="space-y-16">
+      <div class="flex items-baseline justify-between border-b border-zinc-200 dark:border-zinc-800 pb-4">
+        <h2 class="font-serif text-3xl font-semibold text-zinc-900 dark:text-white">Selected Works (2024 — 2026)</h2>
+        <span class="text-xs font-mono text-zinc-400">03 Case Studies</span>
+      </div>
+
+      <!-- Case Study 1 -->
+      <article class="group space-y-6">
+        <div class="relative aspect-[16/10] rounded-2xl overflow-hidden bg-zinc-200 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-800">
+          <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80" alt="Design System Architecture preview" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700">
+          <div class="absolute bottom-4 left-4 px-3 py-1.5 rounded-lg bg-black/75 backdrop-blur-md text-white text-xs font-mono">
+            Figma Design Tokens & React Primitives
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <h3 class="text-2xl font-serif font-bold text-zinc-900 dark:text-white group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors">
+              Aura: Scalable Multi-Brand Design System
+            </h3>
+            <span class="text-xs font-mono text-zinc-500">Lead Systems Designer • 2025</span>
+          </div>
+          <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl">
+            Unified 4 fragmented product suites into a cohesive tokenized design system. Reduced designer-to-developer handoff time by 55% across 45 cross-functional squads.
+          </p>
+          <div class="pt-2 flex items-center gap-6 text-xs font-semibold uppercase tracking-wider text-zinc-900 dark:text-white">
+            <span class="text-emerald-600 dark:text-emerald-400 font-mono">+55% Speed to Ship</span>
+            <span class="text-zinc-400">•</span>
+            <span>45+ Core Components</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Case Study 2 -->
+      <article class="group space-y-6">
+        <div class="relative aspect-[16/10] rounded-2xl overflow-hidden bg-zinc-200 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-800">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Fintech mobile app preview" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700">
+          <div class="absolute bottom-4 left-4 px-3 py-1.5 rounded-lg bg-black/75 backdrop-blur-md text-white text-xs font-mono">
+            iOS & Android Mobile App
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <h3 class="text-2xl font-serif font-bold text-zinc-900 dark:text-white group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors">
+              Vantage: Wealth Dashboard for Retail Investors
+            </h3>
+            <span class="text-xs font-mono text-zinc-500">Product Design • 2024</span>
+          </div>
+          <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl">
+            Redesigned portfolio risk breakdown analytics and automated recurring deposits. Resulted in a 42% lift in month-over-month deposit volume.
+          </p>
+          <div class="pt-2 flex items-center gap-6 text-xs font-semibold uppercase tracking-wider text-zinc-900 dark:text-white">
+            <span class="text-emerald-600 dark:text-emerald-400 font-mono">+42% Deposit Growth</span>
+            <span class="text-zinc-400">•</span>
+            <span>App Store 4.9★ Rating</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- DESIGN PHILOSOPHY -->
+    <section id="about" class="rounded-2xl bg-zinc-100 dark:bg-zinc-900/60 p-8 sm:p-12 border border-zinc-200 dark:border-zinc-800 space-y-6">
+      <h2 class="font-serif text-3xl font-semibold text-zinc-900 dark:text-white">Design Philosophy</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
+        <div class="space-y-2">
+          <div class="font-mono text-xs text-zinc-400">01 / CLARITY</div>
+          <h4 class="font-bold text-sm text-zinc-900 dark:text-white">Eliminate the Non-Essential</h4>
+          <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            Every element on screen must earn its right to exist. Reduce cognitive fatigue through purposeful hierarchy.
+          </p>
+        </div>
+        <div class="space-y-2">
+          <div class="font-mono text-xs text-zinc-400">02 / SYSTEMS</div>
+          <h4 class="font-bold text-sm text-zinc-900 dark:text-white">Design for Scale</h4>
+          <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            Isolated mockups decay; robust tokenized design systems endure. Build modular blocks engineers love to implement.
+          </p>
+        </div>
+        <div class="space-y-2">
+          <div class="font-mono text-xs text-zinc-400">03 / DELIGHT</div>
+          <h4 class="font-bold text-sm text-zinc-900 dark:text-white">Frictionless Interaction</h4>
+          <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            Micro-interactions should feel tactile and instantaneous, adding warmth without slowing the user down.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & FOOTER -->
+    <section id="contact" class="space-y-6 pt-8 border-t border-zinc-200 dark:border-zinc-800">
+      <div class="text-xs font-mono uppercase tracking-widest text-zinc-400">Get in Touch</div>
+      <h2 class="font-serif text-4xl sm:text-5xl font-semibold text-zinc-900 dark:text-white">
+        Let's create something memorable together.
+      </h2>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400 max-w-lg">
+        Open for advisory roles, select freelance design systems consulting, and design leadership conversations.
+      </p>
+
+      <div class="pt-4 flex flex-wrap items-center gap-6 text-sm font-medium">
+        <a href="mailto:elena.chen@example.com" class="px-5 py-2.5 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:opacity-90 transition-opacity">
+          elena.chen@example.com
+        </a>
+        <a href="https://read.cv" target="_blank" rel="noreferrer" class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">ReadCV</a>
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">LinkedIn</a>
+        <a href="https://figma.com" target="_blank" rel="noreferrer" class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">Figma Community</a>
+      </div>
+
+      <div class="pt-12 text-xs text-zinc-400 font-mono flex justify-between">
+        <span>© 2026 Elena Chen.</span>
+        <span>Set in Cormorant Garamond & Inter.</span>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    lucide.createIcons();
+
+    const themeToggle = document.getElementById('theme-toggle');
+    const lightIcon = document.getElementById('theme-light-icon');
+    const darkIcon = document.getElementById('theme-dark-icon');
+
+    function applyTheme(isDark) {
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        darkIcon.classList.add('hidden');
+        lightIcon.classList.remove('hidden');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        darkIcon.classList.remove('hidden');
+        lightIcon.classList.add('hidden');
+      }
+      lucide.createIcons();
+    }
+
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    applyTheme(savedTheme === 'dark' || (!savedTheme && systemPrefersDark));
+
+    themeToggle?.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      applyTheme(!isDark);
+    });
+  </script>
+</body>
+</html>

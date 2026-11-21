@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordan Lee | High-Retention Video Editor & Motion Designer</title>
+  <meta name="description" content="Senior Video Editor & Motion Graphics Artist helping creators and brands craft viral, high-retention content with over 75M+ total views.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Syne -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            display: ['Syne', 'sans-serif'],
+          },
+          colors: {
+            accent: {
+              400: '#f43f5e',
+              500: '#e11d48',
+              600: '#be123c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#0b0c10] dark:bg-[#0b0c10] text-zinc-100 antialiased min-h-screen selection:bg-rose-500/30 selection:text-rose-400">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 w-full backdrop-blur-lg bg-[#0b0c10]/80 border-b border-zinc-800/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5 font-display font-extrabold text-xl tracking-tight text-white">
+        <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-rose-600 to-amber-500 flex items-center justify-center text-white text-xs font-black">
+          JL
+        </span>
+        <span>Jordan Lee</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-zinc-400">
+        <a href="#showreel" class="hover:text-white transition-colors">Showreel</a>
+        <a href="#work" class="hover:text-white transition-colors">Selected Edits</a>
+        <a href="#metrics" class="hover:text-white transition-colors">Metrics</a>
+        <a href="#workflow" class="hover:text-white transition-colors">Toolbox</a>
+        <a href="#booking" class="hover:text-white transition-colors">Book Project</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-3">
+        <a href="#booking" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-600 hover:bg-rose-500 text-white shadow-lg shadow-rose-600/30 transition-all hover:scale-105">
+          <span>Inquire Availability</span>
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20 space-y-28">
+
+    <!-- HERO SECTION -->
+    <section class="text-center space-y-8 pt-4">
+      <!-- Status Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/20">
+        <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+        <span>Booking 2 Creator & Brand Projects for Q1 2026</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-display font-extrabold text-white tracking-tight leading-[1.08] max-w-4xl mx-auto">
+        Turning raw footage into <span class="bg-gradient-to-r from-rose-500 via-amber-400 to-rose-400 bg-clip-text text-transparent">viral, high-retention stories</span>.
+      </h1>
+
+      <p class="text-zinc-400 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
+        I edit high-converting YouTube long-form content, hyper-engaging viral Reels/Shorts, and stylized motion graphics that hook attention in the first 3 seconds.
+      </p>
+
+      <!-- Primary Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+        <button id="open-showreel-modal" class="group inline-flex items-center gap-3 px-7 py-3.5 rounded-full bg-white text-zinc-900 font-bold text-sm hover:bg-zinc-200 transition-all shadow-xl hover:scale-105">
+          <span class="w-7 h-7 rounded-full bg-rose-600 text-white flex items-center justify-center group-hover:scale-110 transition-transform">
+            <i data-lucide="play" class="w-3.5 h-3.5 fill-current ml-0.5"></i>
+          </span>
+          <span>Watch 2026 Showreel (1:45)</span>
+        </button>
+
+        <a href="#work" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-zinc-900 text-zinc-300 hover:text-white border border-zinc-800 hover:border-zinc-700 text-sm font-semibold transition-colors">
+          <span>Browse Projects</span>
+          <i data-lucide="arrow-down" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <!-- Quick Metrics Ribbon -->
+      <div id="metrics" class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-12 max-w-4xl mx-auto">
+        <div class="p-6 rounded-2xl bg-zinc-900/60 border border-zinc-800/80">
+          <div class="text-3xl sm:text-4xl font-display font-extrabold text-white">75M+</div>
+          <div class="text-xs text-zinc-400 uppercase tracking-wider font-semibold mt-1">Total Views Generated</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-zinc-900/60 border border-zinc-800/80">
+          <div class="text-3xl sm:text-4xl font-display font-extrabold text-rose-500">68.4%</div>
+          <div class="text-xs text-zinc-400 uppercase tracking-wider font-semibold mt-1">Avg 30s Retention</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-zinc-900/60 border border-zinc-800/80">
+          <div class="text-3xl sm:text-4xl font-display font-extrabold text-white">320+</div>
+          <div class="text-xs text-zinc-400 uppercase tracking-wider font-semibold mt-1">Videos Delivered</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-zinc-900/60 border border-zinc-800/80">
+          <div class="text-3xl sm:text-4xl font-display font-extrabold text-amber-400">48 hrs</div>
+          <div class="text-xs text-zinc-400 uppercase tracking-wider font-semibold mt-1">Avg Turnaround</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORKS GALLERY -->
+    <section id="work" class="space-y-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-rose-500">Portfolio</span>
+          <h2 class="text-3xl font-display font-bold text-white mt-1">Selected Editing Projects</h2>
+        </div>
+        <!-- Work Filter Tabs -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+          <button class="filter-btn active px-4 py-1.5 rounded-full text-xs font-semibold bg-rose-600 text-white transition-colors" data-cat="all">All Edits</button>
+          <button class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-zinc-900 text-zinc-400 hover:text-white border border-zinc-800 transition-colors" data-cat="long">YouTube Long-Form</button>
+          <button class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-zinc-900 text-zinc-400 hover:text-white border border-zinc-800 transition-colors" data-cat="shorts">Shorts & Reels</button>
+          <button class="filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-zinc-900 text-zinc-400 hover:text-white border border-zinc-800 transition-colors" data-cat="commercial">Commercial / Motion</button>
+        </div>
+      </div>
+
+      <!-- Video Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Video Item 1 -->
+        <div class="project-item group rounded-2xl bg-zinc-900/60 border border-zinc-800 overflow-hidden hover:border-zinc-700 transition-all" data-cat="long">
+          <div class="relative aspect-video bg-zinc-800 overflow-hidden cursor-pointer play-trigger" data-video="https://www.youtube.com/embed/sample_video">
+            <!-- Simulated High-Impact Thumbnail -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
+            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80" alt="Documentary edit thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <!-- Play Overlay -->
+            <div class="absolute inset-0 z-20 flex items-center justify-center">
+              <span class="w-12 h-12 rounded-full bg-rose-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <i data-lucide="play" class="w-5 h-5 fill-current ml-0.5"></i>
+              </span>
+            </div>
+            <!-- Duration Badge -->
+            <span class="absolute bottom-3 right-3 z-20 px-2 py-0.5 rounded bg-black/80 text-white font-mono text-xs">14:22</span>
+            <!-- Views Badge -->
+            <span class="absolute top-3 left-3 z-20 px-2.5 py-1 rounded-full bg-rose-600/90 text-white text-xs font-bold flex items-center gap-1 shadow">
+              <i data-lucide="flame" class="w-3.5 h-3.5 fill-current"></i> 3.4M Views
+            </span>
+          </div>
+          <div class="p-5 space-y-2">
+            <span class="text-xs text-rose-400 font-semibold uppercase tracking-wider">Documentary / Long-Form</span>
+            <h3 class="text-lg font-bold text-white group-hover:text-rose-400 transition-colors">The Engineering Behind Hypersonic Flight</h3>
+            <p class="text-xs text-zinc-400 line-clamp-2">Paced story editing with complex 3D tracking, custom sound design, and animated maps.</p>
+          </div>
+        </div>
+
+        <!-- Video Item 2 -->
+        <div class="project-item group rounded-2xl bg-zinc-900/60 border border-zinc-800 overflow-hidden hover:border-zinc-700 transition-all" data-cat="shorts">
+          <div class="relative aspect-video bg-zinc-800 overflow-hidden cursor-pointer play-trigger" data-video="https://www.youtube.com/embed/sample_video">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
+            <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=80" alt="Viral reel edit thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 z-20 flex items-center justify-center">
+              <span class="w-12 h-12 rounded-full bg-rose-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <i data-lucide="play" class="w-5 h-5 fill-current ml-0.5"></i>
+              </span>
+            </div>
+            <span class="absolute bottom-3 right-3 z-20 px-2 py-0.5 rounded bg-black/80 text-white font-mono text-xs">0:58</span>
+            <span class="absolute top-3 left-3 z-20 px-2.5 py-1 rounded-full bg-rose-600/90 text-white text-xs font-bold flex items-center gap-1 shadow">
+              <i data-lucide="flame" class="w-3.5 h-3.5 fill-current"></i> 8.1M Views
+            </span>
+          </div>
+          <div class="p-5 space-y-2">
+            <span class="text-xs text-amber-400 font-semibold uppercase tracking-wider">Shorts & TikTok Viral</span>
+            <h3 class="text-lg font-bold text-white group-hover:text-rose-400 transition-colors">Fast-Paced Tech Hardware Breakdown</h3>
+            <p class="text-xs text-zinc-400 line-clamp-2">Dynamic kinetic typography, SFX risers, seamless zooms, and color pops for a leading tech creator.</p>
+          </div>
+        </div>
+
+        <!-- Video Item 3 -->
+        <div class="project-item group rounded-2xl bg-zinc-900/60 border border-zinc-800 overflow-hidden hover:border-zinc-700 transition-all" data-cat="commercial">
+          <div class="relative aspect-video bg-zinc-800 overflow-hidden cursor-pointer play-trigger" data-video="https://www.youtube.com/embed/sample_video">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Commercial launch edit thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 z-20 flex items-center justify-center">
+              <span class="w-12 h-12 rounded-full bg-rose-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <i data-lucide="play" class="w-5 h-5 fill-current ml-0.5"></i>
+              </span>
+            </div>
+            <span class="absolute bottom-3 right-3 z-20 px-2 py-0.5 rounded bg-black/80 text-white font-mono text-xs">1:30</span>
+            <span class="absolute top-3 left-3 z-20 px-2.5 py-1 rounded-full bg-purple-600/90 text-white text-xs font-bold flex items-center gap-1 shadow">
+              SaaS Commercial
+            </span>
+          </div>
+          <div class="p-5 space-y-2">
+            <span class="text-xs text-purple-400 font-semibold uppercase tracking-wider">Commercial / Motion 3D</span>
+            <h3 class="text-lg font-bold text-white group-hover:text-rose-400 transition-colors">OmniFlow Platform Launch Teaser</h3>
+            <p class="text-xs text-zinc-400 line-clamp-2">High-energy product trailer featuring Blender 3D product renders, sleek typography, and UI motion.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BEFORE & AFTER BREAKDOWN -->
+    <section class="rounded-3xl bg-zinc-900/60 border border-zinc-800 p-8 sm:p-10 space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-rose-500">Craftsmanship</span>
+          <h2 class="text-2xl sm:text-3xl font-display font-bold text-white">Color Grading & VFX Compositing</h2>
+        </div>
+        <span class="text-xs font-mono text-zinc-400">DaVinci Resolve Studio & After Effects</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+        <div class="space-y-2">
+          <div class="relative aspect-video rounded-xl overflow-hidden border border-zinc-800">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Raw Log Footage" class="w-full h-full object-cover filter saturate-50 contrast-75 brightness-90">
+            <span class="absolute top-3 left-3 px-2 py-1 rounded bg-black/80 text-zinc-300 text-xs font-mono font-medium">RAW LOG FOOTAGE</span>
+          </div>
+          <p class="text-xs text-zinc-400">Flat dynamic range, uncalibrated audio, standard cuts.</p>
+        </div>
+
+        <div class="space-y-2">
+          <div class="relative aspect-video rounded-xl overflow-hidden border border-rose-500/50 shadow-lg shadow-rose-950/20">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Final Color Grade & VFX" class="w-full h-full object-cover filter contrast-125 saturate-125">
+            <span class="absolute top-3 left-3 px-2 py-1 rounded bg-rose-600 text-white text-xs font-mono font-bold">FINAL CINEMATIC GRADE</span>
+          </div>
+          <p class="text-xs text-rose-400 font-medium">Film emulation LUT, custom skin tone isolation, spatial sound design.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITING TOOLBOX -->
+    <section id="workflow" class="space-y-6">
+      <div class="text-center">
+        <span class="text-xs font-semibold uppercase tracking-wider text-rose-500">Software Suite</span>
+        <h2 class="text-3xl font-display font-bold text-white mt-1">Tools & Creative Arsenal</h2>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 max-w-3xl mx-auto pt-2">
+        <div class="px-5 py-3 rounded-2xl bg-zinc-900 border border-zinc-800 flex items-center gap-3">
+          <i data-lucide="scissors" class="w-5 h-5 text-rose-500"></i>
+          <span class="text-sm font-semibold text-white">Adobe Premiere Pro</span>
+        </div>
+        <div class="px-5 py-3 rounded-2xl bg-zinc-900 border border-zinc-800 flex items-center gap-3">
+          <i data-lucide="zap" class="w-5 h-5 text-purple-400"></i>
+          <span class="text-sm font-semibold text-white">Adobe After Effects</span>
+        </div>
+        <div class="px-5 py-3 rounded-2xl bg-zinc-900 border border-zinc-800 flex items-center gap-3">
+          <i data-lucide="sun-medium" class="w-5 h-5 text-amber-400"></i>
+          <span class="text-sm font-semibold text-white">DaVinci Resolve Studio</span>
+        </div>
+        <div class="px-5 py-3 rounded-2xl bg-zinc-900 border border-zinc-800 flex items-center gap-3">
+          <i data-lucide="box" class="w-5 h-5 text-orange-400"></i>
+          <span class="text-sm font-semibold text-white">Blender 3D</span>
+        </div>
+        <div class="px-5 py-3 rounded-2xl bg-zinc-900 border border-zinc-800 flex items-center gap-3">
+          <i data-lucide="volume-2" class="w-5 h-5 text-emerald-400"></i>
+          <span class="text-sm font-semibold text-white">Adobe Audition / SFX</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INQUIRY & BOOKING SECTION -->
+    <section id="booking" class="rounded-3xl bg-gradient-to-b from-zinc-900 to-black p-8 sm:p-14 border border-zinc-800 text-center space-y-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/20">
+        <i data-lucide="film" class="w-3.5 h-3.5"></i>
+        <span>Ready to elevate your content?</span>
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-display font-extrabold text-white tracking-tight">Let's edit your next viral video.</h2>
+      <p class="text-zinc-400 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
+        Send over your footage link, script outline, or brand brief. Fast turnaround, transparent rates, and revisions until you're thrilled.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+        <a href="mailto:jordan.edits@example.com" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-rose-600 hover:bg-rose-500 text-white font-bold text-sm shadow-xl shadow-rose-600/30 transition-all hover:scale-105">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>Email Brief: jordan.edits@example.com</span>
+        </a>
+        <a href="https://calendly.com" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white font-semibold text-sm transition-colors">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Schedule 15-Min Intro Call</span>
+        </a>
+      </div>
+
+      <div class="pt-8 border-t border-zinc-800 text-xs text-zinc-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>© 2026 Jordan Lee • High-Retention Video Post-Production.</div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-zinc-300">YouTube</a>
+          <a href="#" class="hover:text-zinc-300">Instagram</a>
+          <a href="#" class="hover:text-zinc-300">X (Twitter)</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- VIDEO SHOWREEL MODAL (Interactive Flow) -->
+  <div id="video-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 p-4">
+    <div class="relative w-full max-w-4xl bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden shadow-2xl">
+      <div class="flex items-center justify-between px-5 py-3.5 border-b border-zinc-800">
+        <span class="text-white font-semibold text-sm flex items-center gap-2">
+          <i data-lucide="play-circle" class="w-4 h-4 text-rose-500"></i> Video Preview
+        </span>
+        <button id="close-modal-btn" class="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="aspect-video w-full bg-black">
+        <iframe id="modal-video-frame" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    // Modal Video Player Logic
+    const modal = document.getElementById('video-modal');
+    const iframe = document.getElementById('modal-video-frame');
+    const closeBtn = document.getElementById('close-modal-btn');
+    const openShowreelBtn = document.getElementById('open-showreel-modal');
+
+    function openVideo(src) {
+      iframe.src = src;
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+    }
+
+    function closeVideo() {
+      iframe.src = '';
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    openShowreelBtn?.addEventListener('click', () => {
+      openVideo('https://www.youtube.com/embed/sample_video');
+    });
+
+    document.querySelectorAll('.play-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const videoUrl = trigger.getAttribute('data-video');
+        if (videoUrl) openVideo(videoUrl + '?autoplay=1');
+      });
+    });
+
+    closeBtn?.addEventListener('click', closeVideo);
+    modal?.addEventListener('click', (e) => {
+      if (e.target === modal) closeVideo();
+    });
+
+    // Work Filter Logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.className = 'filter-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-zinc-900 text-zinc-400 hover:text-white border border-zinc-800 transition-colors';
+        });
+        btn.className = 'filter-btn active px-4 py-1.5 rounded-full text-xs font-semibold bg-rose-600 text-white transition-colors';
+
+        const category = btn.getAttribute('data-cat');
+        projectItems.forEach(item => {
+          if (category === 'all' || item.getAttribute('data-cat') === category) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

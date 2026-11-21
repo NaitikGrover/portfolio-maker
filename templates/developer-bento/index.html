@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Rivera | Senior Full-Stack Engineer & Systems Architect</title>
+  <meta name="description" content="Senior Full-Stack Engineer specializing in high-throughput systems, distributed backend architecture, and high-performance modern web apps.">
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #52525b; }
+  </style>
+</head>
+<body class="bg-zinc-50 dark:bg-[#09090b] text-zinc-800 dark:text-zinc-200 antialiased min-h-screen selection:bg-brand-500/20 selection:text-brand-500 transition-colors duration-300">
+
+  <!-- Background Ambient Glow -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-brand-500/10 dark:bg-brand-500/15 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/3 -right-40 w-96 h-96 bg-purple-500/10 dark:bg-purple-500/10 rounded-full blur-3xl"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-white/70 dark:bg-[#09090b]/80 border-b border-zinc-200/80 dark:border-zinc-800/80 transition-colors">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-bold text-lg tracking-tight text-zinc-900 dark:text-white flex items-center gap-2">
+        <span class="w-8 h-8 rounded-lg bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 flex items-center justify-center font-mono text-sm font-black">AR</span>
+        <span>Alex Rivera</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+        <a href="#about" class="hover:text-zinc-900 dark:hover:text-white transition-colors">About</a>
+        <a href="#projects" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Projects</a>
+        <a href="#experience" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Experience</a>
+        <a href="#skills" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Skills</a>
+        <a href="#contact" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <!-- Theme Switcher & Actions -->
+      <div class="flex items-center gap-3">
+        <button id="theme-toggle" aria-label="Toggle Theme" class="p-2 rounded-xl text-zinc-500 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors">
+          <i data-lucide="moon" id="theme-icon-dark" class="w-4 h-4 hidden"></i>
+          <i data-lucide="sun" id="theme-icon-light" class="w-4 h-4"></i>
+        </button>
+
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:opacity-90 transition-opacity">
+          <span>Get in Touch</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" aria-label="Toggle Mobile Menu" class="md:hidden p-2 rounded-xl text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-800">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-1 bg-white dark:bg-[#09090b] border-b border-zinc-200 dark:border-zinc-800 text-sm">
+      <a href="#about" class="block py-2 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">About</a>
+      <a href="#projects" class="block py-2 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">Projects</a>
+      <a href="#experience" class="block py-2 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">Experience</a>
+      <a href="#skills" class="block py-2 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">Skills</a>
+      <a href="#contact" class="block py-2 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">Contact</a>
+    </div>
+  </header>
+
+  <main class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-12 md:py-20 space-y-24">
+
+    <!-- HERO SECTION -->
+    <section id="about" class="space-y-6">
+      <!-- Status Badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>Available for Q1 2026 Opportunities • SF & Remote</span>
+      </div>
+
+      <!-- Headline & Hook -->
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-zinc-900 dark:text-white leading-[1.1]">
+        Building resilient systems and high-throughput web applications.
+      </h1>
+
+      <p class="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl leading-relaxed">
+        I'm <strong class="text-zinc-900 dark:text-white font-semibold">Alex Rivera</strong>, a full-stack engineer and cloud architect with 6+ years specializing in distributed Go backends, Next.js web applications, and resilient cloud infrastructure.
+      </p>
+
+      <!-- Primary Action CTAs -->
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="#projects" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-medium text-sm bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-100 shadow-sm transition-all">
+          <span>Explore Projects</span>
+          <i data-lucide="arrow-down" class="w-4 h-4"></i>
+        </a>
+
+        <!-- OriginUI Copy Email Pill -->
+        <button id="copy-email-hero" data-email="alex.rivera@example.com" class="group relative inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-800 text-sm font-medium hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all">
+          <i data-lucide="mail" class="w-4 h-4 text-zinc-400"></i>
+          <span>alex.rivera@example.com</span>
+          <i data-lucide="copy" class="w-3.5 h-3.5 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-200"></i>
+          <span id="copy-pill-feedback" class="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-0.5 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-xs rounded shadow opacity-0 pointer-events-none transition-opacity">
+            Copied!
+          </span>
+        </button>
+
+        <a href="#" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white text-sm font-medium transition-colors">
+          <i data-lucide="file-text" class="w-4 h-4"></i>
+          <span>Resume (PDF)</span>
+        </a>
+      </div>
+
+      <!-- Quick Social Icons -->
+      <div class="flex items-center gap-4 pt-2 text-zinc-500 dark:text-zinc-400">
+        <a href="https://github.com" target="_blank" rel="noreferrer" class="p-2 rounded-lg hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/50 transition-colors" aria-label="GitHub">
+          <i data-lucide="github" class="w-5 h-5"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="p-2 rounded-lg hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/50 transition-colors" aria-label="LinkedIn">
+          <i data-lucide="linkedin" class="w-5 h-5"></i>
+        </a>
+        <a href="https://x.com" target="_blank" rel="noreferrer" class="p-2 rounded-lg hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/50 transition-colors" aria-label="X (Twitter)">
+          <i data-lucide="twitter" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL WIDGET (Micrograph style) -->
+    <section class="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-900 text-zinc-200 p-5 font-mono text-sm shadow-xl overflow-hidden">
+      <div class="flex items-center justify-between pb-3 border-b border-zinc-800 mb-4">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+          <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+          <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
+          <span class="text-xs text-zinc-500 ml-2">alex@workstation:~</span>
+        </div>
+        <span class="text-xs text-zinc-500">bash • v5.2</span>
+      </div>
+      <div class="space-y-2">
+        <div class="flex gap-2 text-zinc-400">
+          <span class="text-brand-400 font-bold">$</span>
+          <span>alex --focus</span>
+        </div>
+        <div class="text-zinc-300 pl-4">
+          → Distributed Systems • High-throughput Go APIs • Event Streams (Kafka) • Next.js 15
+        </div>
+        <div class="flex gap-2 text-zinc-400 pt-1">
+          <span class="text-brand-400 font-bold">$</span>
+          <span>alex --current-metrics</span>
+        </div>
+        <div class="text-emerald-400 pl-4">
+          ✓ p99 API Latency: &lt; 28ms | 10M+ daily events processed | 99.99% uptime maintained
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS BENTO GRID (21st.dev inspired) -->
+    <section id="projects" class="space-y-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs font-mono uppercase tracking-wider text-brand-600 dark:text-brand-400 font-semibold">Selected Work</span>
+          <h2 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white mt-1">Featured Engineering Projects</h2>
+        </div>
+        <p class="text-sm text-zinc-500 font-mono">Production systems & OSS contributions</p>
+      </div>
+
+      <!-- Bento Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Large Card 1 (Span 2) -->
+        <div class="md:col-span-2 group relative rounded-2xl bg-white dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 p-7 flex flex-col justify-between hover:border-zinc-400 dark:hover:border-zinc-700 transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium bg-brand-500/10 text-brand-600 dark:text-brand-400 border border-brand-500/20">
+                Cloud Infrastructure
+              </span>
+              <span class="text-xs text-zinc-400 font-mono">2025</span>
+            </div>
+            <h3 class="text-2xl font-bold text-zinc-900 dark:text-white mb-2 group-hover:text-brand-500 transition-colors">
+              MeshRoute: Multi-Cloud Traffic Balancer
+            </h3>
+            <p class="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed mb-6">
+              Low-latency dynamic ingress controller built in Go that routes incoming API requests across AWS and GCP clusters based on real-time health checks, cutting regional failover latency from 45s to 800ms.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6 font-mono text-xs">
+              <span class="px-2.5 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">Go</span>
+              <span class="px-2.5 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">eBPF</span>
+              <span class="px-2.5 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">Kubernetes</span>
+              <span class="px-2.5 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">gRPC</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 pt-4 border-t border-zinc-100 dark:border-zinc-800/80">
+            <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 dark:text-brand-400 hover:underline">
+              <span>Live Architecture</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">
+              <span>GitHub Repo</span>
+              <i data-lucide="github" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Metric Card 1 (Span 1) -->
+        <div class="rounded-2xl bg-white dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 p-7 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono uppercase tracking-wider text-zinc-500">Performance Metric</span>
+            <div class="text-5xl font-black text-zinc-900 dark:text-white mt-4 font-mono tracking-tight">85ms</div>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-3">
+              Consistent global p99 response time achieved across 4 continental regions.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-zinc-100 dark:border-zinc-800/80 text-xs font-mono text-emerald-600 dark:text-emerald-400 flex items-center gap-2">
+            <i data-lucide="check-circle" class="w-4 h-4"></i> Zero unplanned downtime
+          </div>
+        </div>
+
+        <!-- Metric Card 2 (Span 1) -->
+        <div class="rounded-2xl bg-white dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 p-7 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono uppercase tracking-wider text-zinc-500">Open Source Impact</span>
+            <div class="text-5xl font-black text-zinc-900 dark:text-white mt-4 font-mono tracking-tight">1.8K★</div>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mt-3">
+              Developer tools authored and maintained with weekly downloads exceeding 25,000.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-zinc-100 dark:border-zinc-800/80 text-xs font-mono text-brand-600 dark:text-brand-400 flex items-center gap-2">
+            <i data-lucide="git-pull-request" class="w-4 h-4"></i> 38 Community Contributors
+          </div>
+        </div>
+
+        <!-- Large Card 2 (Span 2) -->
+        <div class="md:col-span-2 group relative rounded-2xl bg-white dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 p-7 flex flex-col justify-between hover:border-zinc-400 dark:hover:border-zinc-700 transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
+                Full-Stack SaaS
+              </span>
+              <span class="text-xs text-zinc-400 font-mono">2024</span>
+            </div>
+            <h3 class="text-2xl font-bold text-zinc-900 dark:text-white mb-2 group-hover:text-purple-500 transition-colors">
+              Synthetix: Real-Time Event Analytics
+            </h3>
+            <p class="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed mb-6">
+              Privacy-first event streaming platform processing millions of custom telemetry events with sub-second ingestion, interactive WebGL dashboards, and automated anomaly alert webhooks.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6 font-mono text-xs">
+              <span class="px-2.5 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">Next.js 15</span>
+              <span class="px-2.5 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">TypeScript</span>
+              <span class="px-2.5 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">ClickHouse</span>
+              <span class="px-2.5 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">Tailwind</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 pt-4 border-t border-zinc-100 dark:border-zinc-800/80">
+            <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-purple-600 dark:text-purple-400 hover:underline">
+              <span>View Product</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">
+              <span>Documentation</span>
+              <i data-lucide="book-open" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE TIMELINE -->
+    <section id="experience" class="space-y-8">
+      <div>
+        <span class="text-xs font-mono uppercase tracking-wider text-brand-600 dark:text-brand-400 font-semibold">Career Journey</span>
+        <h2 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white mt-1">Work Experience</h2>
+      </div>
+
+      <div class="relative border-l border-zinc-200 dark:border-zinc-800 ml-4 space-y-12">
+        
+        <!-- Role 1 -->
+        <div class="relative pl-8 group">
+          <span class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-brand-500 ring-4 ring-white dark:ring-[#09090b]"></span>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-lg font-bold text-zinc-900 dark:text-white">Staff Software Engineer</h3>
+            <span class="text-xs font-mono text-zinc-500">2023 — Present</span>
+          </div>
+          <div class="text-sm font-medium text-brand-600 dark:text-brand-400 mb-3">Veloce Cloud Systems • San Francisco, CA</div>
+          <ul class="list-disc list-inside text-sm text-zinc-600 dark:text-zinc-400 space-y-2 leading-relaxed">
+            <li>Architected high-throughput ingestion engine in Go, ingesting 15,000 msgs/sec while reducing EC2 server costs by 34%.</li>
+            <li>Mentored a team of 8 full-stack engineers and established company-wide automated canary testing pipelines.</li>
+            <li>Led the migration from monolithic PostgreSQL to partitioned ClickHouse storage for real-time querying.</li>
+          </ul>
+        </div>
+
+        <!-- Role 2 -->
+        <div class="relative pl-8 group">
+          <span class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-zinc-300 dark:bg-zinc-700 ring-4 ring-white dark:ring-[#09090b]"></span>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-lg font-bold text-zinc-900 dark:text-white">Senior Backend Engineer</h3>
+            <span class="text-xs font-mono text-zinc-500">2021 — 2023</span>
+          </div>
+          <div class="text-sm font-medium text-zinc-500 dark:text-zinc-400 mb-3">Hyperion Technologies • Austin, TX (Remote)</div>
+          <ul class="list-disc list-inside text-sm text-zinc-600 dark:text-zinc-400 space-y-2 leading-relaxed">
+            <li>Designed and deployed 14 gRPC microservices orchestrating multi-tenant billing and analytics.</li>
+            <li>Reduced p99 database query response times by 62% through strategic Redis caching and query indexing.</li>
+          </ul>
+        </div>
+
+        <!-- Role 3 -->
+        <div class="relative pl-8 group">
+          <span class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-zinc-300 dark:bg-zinc-700 ring-4 ring-white dark:ring-[#09090b]"></span>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-lg font-bold text-zinc-900 dark:text-white">Full-Stack Developer</h3>
+            <span class="text-xs font-mono text-zinc-500">2019 — 2021</span>
+          </div>
+          <div class="text-sm font-medium text-zinc-500 dark:text-zinc-400 mb-3">Nexus Studio • New York, NY</div>
+          <ul class="list-disc list-inside text-sm text-zinc-600 dark:text-zinc-400 space-y-2 leading-relaxed">
+            <li>Built responsive client web applications using React, TypeScript, Node.js, and GraphQL.</li>
+            <li>Integrated payment gateways (Stripe, Adyen) powering over $20M in client retail volume.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section id="skills" class="space-y-8">
+      <div>
+        <span class="text-xs font-mono uppercase tracking-wider text-brand-600 dark:text-brand-400 font-semibold">Technical Arsenal</span>
+        <h2 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white mt-1">Skills & Tooling</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        
+        <!-- Category 1 -->
+        <div class="rounded-2xl bg-white dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 p-6 space-y-4">
+          <div class="flex items-center gap-2.5 text-zinc-900 dark:text-white font-semibold text-sm">
+            <i data-lucide="code-2" class="w-4 h-4 text-brand-500"></i>
+            <span>Languages</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">Go (Golang)</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">TypeScript</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">Python</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">SQL</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">Rust (Basic)</span>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="rounded-2xl bg-white dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 p-6 space-y-4">
+          <div class="flex items-center gap-2.5 text-zinc-900 dark:text-white font-semibold text-sm">
+            <i data-lucide="server" class="w-4 h-4 text-purple-500"></i>
+            <span>Cloud & Infrastructure</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">AWS</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">Docker</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">Kubernetes</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">Terraform</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">CI/CD (GitHub Actions)</span>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="rounded-2xl bg-white dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 p-6 space-y-4">
+          <div class="flex items-center gap-2.5 text-zinc-900 dark:text-white font-semibold text-sm">
+            <i data-lucide="layers" class="w-4 h-4 text-emerald-500"></i>
+            <span>Frontend & Frameworks</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">Next.js 15</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">React</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">Tailwind CSS</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">Node.js</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 font-mono">PostgreSQL</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & FOOTER SECTION -->
+    <section id="contact" class="rounded-3xl bg-zinc-900 text-white p-8 sm:p-12 border border-zinc-800 text-center space-y-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-white/10 text-zinc-300">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-brand-400"></i>
+        <span>Let's collaborate</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Have an ambitious project in mind?</h2>
+      <p class="text-zinc-400 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
+        Whether you are looking for a staff engineer, systems architect, or technical advisor, I'd love to chat.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <a href="mailto:alex.rivera@example.com" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-zinc-900 font-semibold text-sm hover:bg-zinc-100 transition-colors shadow-lg">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>Send an Email</span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-zinc-800 text-zinc-200 hover:text-white font-semibold text-sm hover:bg-zinc-700 transition-colors">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+          <span>Connect on LinkedIn</span>
+        </a>
+      </div>
+
+      <div class="pt-8 border-t border-zinc-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-500 gap-4">
+        <div>© 2026 Alex Rivera. Built with Portfolio Maker.</div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-zinc-400">Privacy</a>
+          <a href="#" class="hover:text-zinc-400">Terms</a>
+          <a href="#about" class="hover:text-zinc-400">Back to Top ↑</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Logic Scripts -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Theme Switcher Logic
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-icon-dark');
+    const lightIcon = document.getElementById('theme-icon-light');
+
+    function applyTheme(isDark) {
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        darkIcon.classList.add('hidden');
+        lightIcon.classList.remove('hidden');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        darkIcon.classList.remove('hidden');
+        lightIcon.classList.add('hidden');
+      }
+      lucide.createIcons();
+    }
+
+    const storedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    applyTheme(storedTheme === 'dark' || (!storedTheme && prefersDark));
+
+    themeToggleBtn.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      applyTheme(!isDark);
+    });
+
+    // Mobile Navigation Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Copy Email Pill Feedback
+    const copyHeroBtn = document.getElementById('copy-email-hero');
+    const copyFeedback = document.getElementById('copy-pill-feedback');
+    copyHeroBtn?.addEventListener('click', async () => {
+      const email = copyHeroBtn.getAttribute('data-email');
+      if (email) {
+        await navigator.clipboard.writeText(email);
+        copyFeedback.classList.remove('opacity-0');
+        setTimeout(() => copyFeedback.classList.add('opacity-0'), 2000);
+      }
+    });
+  </script>
+</body>
+</html>
