@@ -1,35 +1,47 @@
 # ⚡ Portfolio Maker Skill
 
-> **An intelligent, conversational AI skill that turns any AI assistant into an elite design engineer and portfolio creator.** Compatible with Antigravity, Claude Code, Cursor, Codex, Gemini CLI, and custom agent workflows.
+> **An intelligent, conversational AI skill that creates production-grade React + Vite + Tailwind CSS portfolios using modern component patterns from 21st.dev, Aceternity UI, and OriginUI.** Compatible with Antigravity, Claude Code, Cursor, Codex, and Gemini CLI.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Platform: Cross-Agent](https://img.shields.io/badge/Platform-Antigravity%20%7C%20Claude%20%7C%20Cursor%20%7C%20Codex-emerald)](SKILL.md)
-[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v3.4-38bdf8)](https://tailwindcss.com)
-[![Zero Build Required](https://img.shields.io/badge/Setup-Zero%20Config%20Required-f59e0b)](#-quick-start)
+[![Stack: React + Vite + Tailwind](https://img.shields.io/badge/Stack-React%20%2B%20Vite%20%2B%20Tailwind%20%2B%20TS-61dafb)](SKILL.md)
+[![Components: 21st.dev & Aceternity](https://img.shields.io/badge/Components-21st.dev%20%7C%20Aceternity%20%7C%20OriginUI-8b5cf6)](references/prompt-library.md)
 
 ---
 
-## 🌟 What is Portfolio Maker?
+## 🌟 What Makes Portfolio Maker Different?
 
-**Portfolio Maker** teaches your AI how to systematically interview you, parse your professional background, extract quantifiable impact, and craft a responsive, modern portfolio website tailored to your exact role and aesthetic taste.
+1. **Default Stack is Modern React + Vite**:
+   Unlike basic tools that output a static flat HTML file, Portfolio Maker builds a full, modular **React + Vite + Tailwind CSS (TypeScript)** application with Lucide React icons, Framer Motion transitions, and clean folder structures.
+   *(Single-file HTML or Next.js are also supported when explicitly requested).*
 
-Whether you have a 10-page executive resume or **no resume at all**, Portfolio Maker guides the AI through an interactive intake, recommends archetypes and styles, and outputs production-ready code with interactive light/dark themes, smooth animations, and zero build tool requirements.
+2. **Mandatory Interactive Alignment Step**:
+   The AI never guesses your design preferences. It conducts a resume check (or 3-batch fallback interview if you don't have one) and **explicitly asks** for your preferred:
+   * **Visual Aesthetic**: Sleek Dark Bento (21st.dev/Linear style), Clean Minimalist (Apple/Swiss style), Neo-Brutalist, High-Contrast Editorial, or Bright & Vibrant.
+   * **Theme Mode**: Dark Mode, Light Mode, or Dual Mode with an interactive toggle switch.
+
+3. **Built-in 21st.dev & Aceternity Component Systems**:
+   Generates real, modular UI primitives:
+   * `SpotlightCard.tsx` (Radial mouse-tracking hover glow)
+   * `BentoGrid.tsx` & `BentoCard.tsx` (Asymmetric layout with live status indicators)
+   * `Terminal.tsx` (Interactive simulated developer CLI)
+   * `CopyEmailButton.tsx` (OriginUI 1-click email copy with animated tooltip)
+   * `ThemeToggle.tsx` (Persistent localStorage dark/light mode toggle)
 
 ---
 
-## 🚀 How It Works (The 6-Step Engine)
+## 🚀 Lifecycle & Workflow
 
 ```mermaid
 flowchart TD
-    A["User triggers Portfolio Maker"] --> B{"Resume Available?"}
-    B -- Yes --> C["Parse Resume & Extract Metrics"]
+    A["User Triggers Portfolio Maker"] --> B{"Resume Available?"}
+    B -- Yes --> C["Extract Career, Metrics & Projects"]
     B -- No / None --> D["Progressive 3-Batch Questionnaire"]
-    C --> E["Select Archetype (Dev, Video Editor, Designer, etc.)"]
+    C --> E["MANDATORY Alignment Step"]
     D --> E
-    E --> F["Select Aesthetic & Theme Mode (Dark Bento, Minimalist, Dual-Mode)"]
-    F --> G["Integrate 21st.dev / Aceternity / OriginUI Components"]
-    G --> H["Generate Production-Ready Code (index.html)"]
-    H --> I["1-Click Preview & Free Deployment"]
+    E -->|Ask User| F["1. Aesthetic (Bento, Minimalist, etc.)\n2. Theme Mode (Dark, Light, Dual)\n3. Tech Stack Confirmation (React + Vite)"]
+    F --> G["Integrate 21st.dev & Aceternity UI Components"]
+    G --> H["Generate React + Vite + Tailwind (TypeScript) Codebase"]
+    H --> I["Build Verification (npm run build) & Dev Server"]
 ```
 
 ---
@@ -52,7 +64,6 @@ git clone https://github.com/your-username/portfolio-maker.git .agents/skills/po
 ```
 
 ### 2. Claude Code
-Add to your project's skills or prompt instructions:
 ```bash
 mkdir -p .claude/skills/portfolio-maker
 cp SKILL.md .claude/skills/portfolio-maker/
@@ -61,100 +72,23 @@ cp SKILL.md .claude/skills/portfolio-maker/
 ### 3. Cursor & Codex
 Copy the instructions from `SKILL.md` into your `.cursor/rules` or project `AGENTS.md`.
 
-### 4. Direct / Any AI (ChatGPT, Claude Web, Gemini)
-Simply upload or paste [SKILL.md](./SKILL.md) and tell the AI:
-> *"Act as the Portfolio Maker skill. Let's create my personal portfolio!"*
-
 ---
 
-## 🎯 Key Features & Capabilities
+## 💻 Running a Generated Project
 
-### 1. Smart Resume Intake & Fallback Questionnaire
-* **Resume Autodetection**: Automatically parses `.pdf`, `.docx`, `.txt`, `.md`, or pasted LinkedIn exports.
-* **Intelligent Fallback Protocol**: If you say *"I don't have a resume"*, the AI never leaves you hanging. It runs a lightweight **3-batch progressive questionnaire**:
-  * **Batch 1**: Name, title, elevator pitch hook, contact/socials, availability badge.
-  * **Batch 2**: Experience history, metrics, and top 2-4 featured projects.
-  * **Batch 3**: Categorized tools/skills, certifications, client logos, or testimonials.
-
-### 2. Tailored Profession Archetypes
-Every profession requires a distinct layout and set of signature widgets:
-
-| Archetype | Key Focus | Signature Widgets |
-| :--- | :--- | :--- |
-| **Software Engineer** | Code quality, distributed systems, shipping speed | Interactive terminal (`whoami`, CLI commands), Bento grid, GitHub stats, architecture diagrams. |
-| **Video Editor / Motion Artist** | Visual pacing, audience retention, turnaround time | Click-to-play Showreel Modal, view counters (`75M+ Views`), Before/After color grade breakdown, software dock. |
-| **UI/UX & Product Designer** | User impact, design systems, narrative clarity | Flagship case study breakdowns (Problem → Solution → Metric), Figma token showcase, design philosophy. |
-| **Content Creator / Marketer** | Engagement, brand partnerships, reach | Follower counters, engagement percentage, brand collaborations carousel, media kit download. |
-| **Student / Career Switcher** | Learning velocity, passion projects, fundamentals | Project deep-dives, hackathon wins, course milestones, "Why Hire Me" pitch. |
-
-### 3. Aesthetics & Visual Styles
-* **Sleek Tech / Dark Bento**: Frosted glass cards, subtle neon radial glow, spotlight hover effect (21st.dev / Linear style).
-* **Clean Minimalist**: Swiss grid, generous whitespace, crisp monochromatic typography (Dieter Rams / Apple style).
-* **High-Contrast Editorial**: Elegant serif headlines (Playfair / Cormorant), magazine aesthetic, luxury agency vibe.
-* **Neo-Brutalism**: Solid 2px black borders, vibrant pop colors (lime, cyan, lilac), hard drop shadows (`shadow-[4px_4px_0px_0px_#000]`).
-* **Bright & Vibrant**: Warm gradients, rounded cards, playful micro-interactions.
-
-### 4. High-End UI Component Patterns Built-In
-Inspired by top design registries:
-* **21st.dev & shadcn**: Bento grid asymmetric tiles, animated live dot badges.
-* **Aceternity UI & Animos**: Spotlight glow cards that track mouse movement.
-* **OriginUI & Micrograph**: 1-click "Copy Email" pill with copied tooltip, persistent dark/light theme switchers.
-* **Flows & Motion**: Video showreel modal, filterable project tabs, smooth mobile hamburger drawer.
-
----
-
-## 🎨 Included Production Templates
-
-This repository includes 3 fully functional, standalone reference templates:
-
-* **[templates/developer-bento/index.html](./templates/developer-bento/index.html)**:
-  Full dual-mode Software Engineer portfolio with interactive terminal, bento grid, and career timeline.
-* **[templates/video-editor-showreel/index.html](./templates/video-editor-showreel/index.html)**:
-  High-retention Video Editor portfolio with auto-play showreel modal, metric counters, and color grading comparison.
-* **[templates/creative-minimalist/index.html](./templates/creative-minimalist/index.html)**:
-  Swiss-inspired Product Designer portfolio with serif typography, case study breakdowns, and design philosophy cards.
-
----
-
-## 💻 Zero-Build Live Preview
-
-Test or preview any portfolio instantly using the bundled zero-dependency Python server:
+Once the AI builds your React + Vite portfolio:
 
 ```bash
-# Serve the Developer Bento template:
-python scripts/serve.py templates/developer-bento
-
-# Serve the Video Editor Showreel template:
-python scripts/serve.py templates/video-editor-showreel
-
-# Serve the Minimalist Designer template:
-python scripts/serve.py templates/creative-minimalist
+cd <your-portfolio-folder>
+npm install
+npm run dev
 ```
-*Your browser will automatically open to `http://localhost:3000`.*
 
----
-
-## 🧪 Tested Scenarios
-
-Explore realistic simulated walkthroughs in the [examples/](./examples/) directory:
-1. **[Scenario 1: Senior Full-Stack Engineer with Resume](./examples/scenario-1-developer-with-resume.md)**
-2. **[Scenario 2: Video Editor & Motion Artist without Resume](./examples/scenario-2-video-editor-no-resume.md)**
-3. **[Scenario 3: UI/UX & Product Designer (Minimalist Editorial)](./examples/scenario-3-designer-minimalist.md)**
-4. **[Scenario 4: Junior Developer / Student (Bright & Vibrant)](./examples/scenario-4-junior-student-vibrant.md)**
-
----
-
-## 🚢 1-Click Free Deployment
-
-Once the AI generates your portfolio:
-
-1. **GitHub Pages (Free)**:
-   * Push your code to a GitHub repo.
-   * Go to **Settings > Pages** and select `main` branch.
-   * Your site is live at `https://<username>.github.io/<repo>/`!
-
-2. **Vercel / Netlify (Free)**:
-   * Drag and drop the folder into [Vercel](https://vercel.com) or [Netlify](https://netlify.com) for instant SSL and custom domain support.
+To build for production:
+```bash
+npm run build
+npm run preview
+```
 
 ---
 
@@ -162,32 +96,23 @@ Once the AI generates your portfolio:
 
 ```text
 portfolio-maker/
-├── SKILL.md                     # Main skill definition & AI operating instructions
+├── SKILL.md                     # Main skill definition & operating instructions
 ├── README.md                    # Repository documentation & guide
-├── LICENSE                      # MIT License
-├── scripts/
-│   └── serve.py                 # Instant zero-dependency local preview server
 ├── references/
 │   ├── questionnaire.md         # 3-batch resume fallback intake questionnaire
 │   ├── design-systems.md        # Color palettes, typography & theme architectures
 │   ├── archetypes.md            # Role-specific blueprints (Dev, Video, Design, etc.)
-│   └── prompt-library.md        # 21st.dev, Animos & OriginUI copy-paste components
+│   └── prompt-library.md        # 21st.dev, Aceternity & OriginUI React TSX components
 ├── templates/
-│   ├── developer-bento/         # Full standalone Developer Bento template
-│   ├── video-editor-showreel/   # Full standalone Video Editor Showreel template
-│   └── creative-minimalist/     # Full standalone Minimalist Editorial template
+│   ├── developer-bento/         # Reference developer bento implementation
+│   ├── video-editor-showreel/   # Reference video editor showreel implementation
+│   └── creative-minimalist/     # Reference minimalist editorial implementation
 └── examples/
     ├── scenario-1-developer-with-resume.md
     ├── scenario-2-video-editor-no-resume.md
     ├── scenario-3-designer-minimalist.md
     └── scenario-4-junior-student-vibrant.md
 ```
-
----
-
-## 🤝 Contributing
-
-Contributions, new archetype blueprints, and fresh design component templates are welcome! Feel free to open a Pull Request or issue.
 
 ## 📄 License
 

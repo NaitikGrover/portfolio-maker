@@ -4,227 +4,200 @@ description: >-
   Interactive, intelligent portfolio creation skill for any AI assistant. Activates whenever
   a user asks to build, create, design, or update a personal portfolio website. Guides the
   user through resume intake (or a comprehensive fallback questionnaire if no resume is available),
-  archetype selection (Developer, Video Editor, Designer, Content Creator, etc.), aesthetic & styling
-  preferences (Minimalist, Dark Bento, Neo-Brutalist, Editorial, Vibrant, etc.), and theme mode
-  (Light, Dark, Dual/System toggle). Utilizes modern component patterns inspired by 21st.dev,
-  OriginUI, Aceternity/Animos, Flows, and Micrograph to generate production-ready, responsive,
-  visually stunning portfolios with zero configuration required.
+  mandatory style & theme preference questioning (Light, Dark, or Dual mode; Dark Bento, Minimalist,
+  etc.), and builds a production-grade React + Vite + Tailwind CSS portfolio by default using modern
+  component patterns inspired by 21st.dev, OriginUI, Aceternity/Animos, Flows, and Micrograph.
 ---
 
 # Portfolio Maker Skill
 
-The **Portfolio Maker** skill turns any AI into an elite design engineer and portfolio consultant. It systematically extracts the user's background, selects the ideal design language, and generates a responsive, accessible, high-converting portfolio website.
+The **Portfolio Maker** skill turns any AI into an elite design engineer and portfolio consultant. It systematically extracts the user's background, aligns on visual preferences, and generates a modern, production-grade **React + Vite + Tailwind CSS** portfolio website by default.
 
 ---
 
 ## 🚀 Skill Lifecycle & Workflow
 
 ```
-[Trigger / Install]
+[Trigger / User Request]
         │
         ▼
 [Step 1: Resume Intake Check]
-   ├── Resume Provided? ───────────────► Parse & Structure Data
-   └── No Resume / User Declines ──────► [Step 2: Fallback Questionnaire]
+   ├── Resume Provided? ───────────────► Parse & Extract Info
+   └── No Resume / User Declines ──────► Run Fallback Questionnaire (Batch 1-3)
                                                   │
                                                   ▼
-                                       [Step 3: Archetype & Role Identification]
+                                       [Step 2: MANDATORY Style & Theme Alignment]
+                                          * Ask: Visual Aesthetic (Dark Bento, Minimalist, etc.)
+                                          * Ask: Theme Mode (Dark, Light, or Dual-mode toggle)
+                                          * Confirm Stack: Default React + Vite + Tailwind
                                                   │
                                                   ▼
-                                       [Step 4: Style, Theme & Component Selection]
+                                       [Step 3: Component System Selection (21st.dev / Aceternity)]
                                                   │
                                                   ▼
-                                       [Step 5: Code Generation (Production-Ready)]
+                                       [Step 4: React + Vite Code Generation]
                                                   │
                                                   ▼
-                                       [Step 6: Live Preview & Deployment Guide]
+                                       [Step 5: Build Verification & Preview]
 ```
 
 ---
 
 ## Step 1: Initialization & Resume Intake
 
-When the user asks to create or revamp a portfolio:
-
 1. **Acknowledge and Set the Stage**:
-   Briefly welcome the user and explain that you will build a tailored, production-ready portfolio together in a few quick steps.
+   Welcome the user and confirm you'll build their portfolio step-by-step.
 
 2. **Check for Resume**:
    * Inspect current context and workspace files for an existing resume (`.pdf`, `.md`, `.txt`, `.docx`, LinkedIn export).
-   * If found: Confirm with the user:
-     > *"I noticed your resume in `[file]`. Would you like me to use this as the foundation for your portfolio, or do you have an updated version?"*
+   * If found: Confirm with the user and extract: Name, Title, Bio, Projects, Experience, Metrics, Tech Stack.
    * If NOT found: Ask the user directly:
      > *"To start crafting your portfolio, could you share your resume? You can paste its text, upload a file, or provide a link.*
      > 
      > *If you don't have one ready, no worries at all! Just let me know, and I'll ask you a few quick questions to gather everything we need."*
 
----
-
-## Step 2: Fallback Questionnaire (When User Has No Resume)
-
-If the user says **"I don't have a resume"**, **"Start from scratch"**, or provides minimal context:
-
-Do **not** overwhelm the user with a 30-question wall of text. Instead, use the **Smart Progressive Intake** strategy outlined in [references/questionnaire.md](./references/questionnaire.md).
-
-### Smart Progressive Intake (3 Quick Batches)
-
-#### Batch 1: Core Identity & Target Role
-* **Full Name** & **Preferred Title / Headline** (e.g., *"Alex Rivera — Senior Full-Stack Engineer"* or *"Jordan Lee — Short-Form Video Editor & Storyteller"*).
-* **Location & Work Preference** (e.g., *"San Francisco, CA • Open to Remote"*).
-* **1-Sentence Hook / Value Proposition** (What do you specialize in, and what big problem do you solve for clients or teams?).
-* **Contact & Links** (Email, GitHub, LinkedIn, X/Twitter, YouTube, Behance, etc.).
-
-#### Batch 2: Work Experience & Standout Projects
-* **Top 2-3 Roles or Freelance Experience**: Company/Client name, role, dates, and 1-2 bullet points with *numbers or metrics* (e.g., *"Scaled API to 2M req/sec"*, *"Edited 40+ TikTok videos averaging 300K views"*).
-* **Top 2-4 Featured Projects**:
-  * Project Title & Short description.
-  * Your role & tools/tech stack used.
-  * Deliverables or Live links (GitHub repo, live demo, YouTube showreel link, Figma file, etc.).
-  * Outcome or standout feature.
-
-#### Batch 3: Skills, Tools & Personality
-* **Core Skills & Software**: What are your go-to tools? (e.g., `React, Node.js, TypeScript, PostgreSQL` or `Premiere Pro, DaVinci Resolve, After Effects, Blender`).
-* **Availability Status**: (e.g., *"Available for freelance projects"*, *"Seeking full-time SWE roles"*, *"Booking Q1 2026"*).
-* **Optional Highlights**: Education, certifications, testimonials, awards, or fun facts.
-
-*(For the complete questionnaire reference and role-specific questions, consult [references/questionnaire.md](./references/questionnaire.md).)*
+3. **Fallback Questionnaire (When User Has No Resume)**:
+   If the user says **"I don't have a resume"**, use the **Smart Progressive Intake** strategy from [references/questionnaire.md](./references/questionnaire.md):
+   * **Batch 1**: Name, Title, 1-Sentence Hook, Contact/Social links.
+   * **Batch 2**: Experience history with metrics, top 2-4 projects (title, tech, outcome, links).
+   * **Batch 3**: Tools/Skills matrix, certifications, and availability status.
 
 ---
 
-## Step 3: Archetype & Role Customization
+## Step 2: MANDATORY Style & Theme Preference Alignment
 
-Every profession has distinct portfolio needs. Select or recommend the appropriate archetype:
+> [!IMPORTANT]
+> **DO NOT skip directly to code generation!**
+> Unless the user already explicitly answered these questions in their prompt, you **MUST** pause and ask the user for their style and theme preferences:
 
-| Archetype | Key Focus Sections | Signature Elements |
-| :--- | :--- | :--- |
-| **Software Engineer / Developer** | Projects, Tech Stack, Architecture, GitHub/Open Source | Terminal / Code blocks, Live demo badges, System architecture diagrams, GitHub commit activity widget. |
-| **Video Editor / Motion Designer** | Showreel, Video Player Modal, Retention/View Metrics, Client Brands | High-contrast video cards, Auto-play showreel modal, YouTube/Vimeo embed support, Before/After slider (Color grading/VFX). |
-| **UI/UX & Product Designer** | Case Studies, Design Systems, Prototypes, User Impact | Problem-to-solution narrative, Figma embeds, Interactive UI previews, User testing metrics. |
-| **Content Creator / Marketer** | Audience Analytics, Brand Collaborations, Channels, Press | High-energy stat counters (Followers, Impressions, Views), Social feed cards, Brand logos marquee. |
-| **Student / Career Switcher** | Passion Projects, Transferable Skills, Learning Journey, Education | Highlighted problem-solving process, GitHub links, Certifications, "Why hire me" value pitch. |
+Ask the user:
+> *"Before I generate the code, let's align on the visual design and setup:*
+> 
+> 1. **Visual Style / Aesthetic**:
+>    * **Sleek Tech / Dark Bento** (Inspired by 21st.dev, Linear & Aceternity — glowing borders, spotlight hover cards, carbon dark canvas).
+>    * **Clean Minimalist / Swiss Grid** (Inspired by Apple & Dieter Rams — generous whitespace, crisp typography, subtle borders).
+>    * **Neo-Brutalism** (High-contrast bold borders, drop shadows, vibrant pop accent colors).
+>    * **High-Contrast Editorial** (Elegant serif headlines, magazine layout, studio aesthetic).
+>    * **Bright & Vibrant** (Warm playful gradients, rounded pill cards, soft micro-interactions).
+> 
+> 2. **Theme Mode**:
+>    * **Dark Mode** (Sleek, immersive tech vibe).
+>    * **Light Mode** (Crisp, clean, high-readability).
+>    * **Dual Mode (Recommended)** (Both Light and Dark mode with an interactive toggle switch that remembers preferences in `localStorage`).
+> 
+> 3. **Tech Stack**:
+>    * By default, I will generate a complete, modular **React + Vite + Tailwind CSS** project with Lucide React and Framer Motion components.
+>    * (If you prefer a single-file HTML or Next.js instead, just let me know!)"*
 
-*(For in-depth archetype blueprints, consult [references/archetypes.md](./references/archetypes.md).)*
-
----
-
-## Step 4: Aesthetic, Style & Theme Selection
-
-Present the user with clear, distinct aesthetic options:
-
-### 1. Aesthetic Styles
-
-1. **Sleek Tech / Dark Bento** *(Popularized by 21st.dev, Linear, Aceternity)*
-   * *Look & Feel*: Dark carbon background (`#09090b`), subtle glowing radial gradients, frosted glass borders (`border-white/10`), spotlight hover cards, micro-interactions.
-   * *Best for*: Developers, AI engineers, tech founders.
-
-2. **Clean Minimalist / Swiss Grid** *(Vercel, Notion, Apple style)*
-   * *Look & Feel*: High whitespace, crisp typography (Inter / Geist), subtle borders (`border-zinc-200`), ultra-clean layout, focus on clarity and speed.
-   * *Best for*: Senior engineers, product managers, technical writers.
-
-3. **High-Contrast Editorial** *(Magazine, Studio, Luxury Agency)*
-   * *Look & Feel*: Elegant serif headlines (Playfair / Cormorant), bold monochromatic palette, oversized typography, asymmetrical grid.
-   * *Best for*: Art directors, UI/UX designers, creative leads.
-
-4. **Neo-Brutalism** *(Trendy, Bold, Playful)*
-   * *Look & Feel*: High-contrast black 2px/3px borders, hard drop shadows (`shadow-[4px_4px_0px_0px_#000]`), vibrant pop colors (lime `#a3e635`, yellow `#fde047`, lilac `#c084fc`), monospace accents.
-   * *Best for*: Creative developers, video editors, indie hackers, motion designers.
-
-5. **Bright & Vibrant / Modern Creative**
-   * *Look & Feel*: Warm gradients, rounded pill badges, playful hover bounces, friendly illustrations/emojis, approachable vibe.
-   * *Best for*: Content creators, junior developers, community builders.
-
-### 2. Theme Mode Selection
-Always ask the user for their theme preference:
-* **Dark Mode** (immersive, modern tech feel)
-* **Light Mode** (clean, crisp, traditional readable aesthetic)
-* **Dual Mode (Recommended)** (Light + Dark mode with a toggle button that remembers user preference via `localStorage` and defaults to the system OS preference).
-
-*(For detailed color systems and typography pairings, consult [references/design-systems.md](./references/design-systems.md).)*
+Wait for the user's response (or proceed using their stated preferences if they already answered).
 
 ---
 
-## Step 5: Design Systems & Component Libraries Integration
+## Step 3: Prompt Libraries & Web Research Integration
 
-The generated code must incorporate high-end design patterns inspired by the best modern UI libraries:
+The AI has full permission and is expected to search the web and leverage modern prompt and component registries — including **21st.dev**, **Aceternity UI / Animos**, **OriginKit / OriginUI**, **Flows**, and **Micrograph**:
 
-* **21st.dev & shadcn**:
-  * Bento grid layouts with varying tile spans (`col-span-12 md:col-span-8` + `col-span-12 md:col-span-4`).
-  * Modern badge tags with subtle dot indicators (`w-2 h-2 rounded-full bg-emerald-500 animate-pulse`).
-  * Interactive project tabs or tag filters.
+* **Web Search for Elements**: If a specific archetype, interaction, or style requires a specialized widget (e.g. video showreel modal, audio waveform, 3D card tilt, animated tech marquee, interactive filter tab), the AI should search the web for the latest clean React + Tailwind + Framer Motion implementations.
+* **Component Primitives to Integrate**:
+  * **Spotlight Card Hover Effect** (`Spotlight.tsx`): Radial gradient spotlight tracking mouse position across card surfaces (Aceternity / 21st.dev).
+  * **Bento Grid & Bento Cards** (`BentoGrid.tsx`): Asymmetric card layout with varying column/row spans and live status indicators (21st.dev / Magic UI).
+  * **Border Beam & Gradient Glows** (`BorderBeam.tsx`): Smooth animated border glow around featured hero cards.
+  * **Interactive Terminal Widget** (`Terminal.tsx`): Simulated command-line interface with interactive tabs or output commands (`whoami`, `specialties`, `status`).
+  * **OriginUI 1-Click Copy Email Pill** (`CopyEmailButton.tsx`): Tactile button copying contact email with animated pop-up tooltip feedback.
+  * **Interactive Theme Switcher** (`ThemeToggle.tsx`): Accessible toggle switching between `dark` and `light` classes on `document.documentElement` with `localStorage` persistence.
 
-* **Aceternity UI & Animos**:
-  * Spotlight card hover effect (radial gradient tracking the cursor).
-  * Glowing animated border gradients (`bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500`).
-  * Smooth accordion FAQ or experience disclosure.
-
-* **OriginUI & Micrograph**:
-  * Avatar clusters, status badges with tooltips.
-  * "Copy Email" one-click button with dynamic copied feedback tooltip.
-  * Clean, accessible navigation bar with frosted backdrop blur (`backdrop-blur-md bg-white/70 dark:bg-zinc-900/70`).
-  * Keyboard shortcut indicator (`Press ⌘K to contact`).
-
-* **Flows / Motion**:
-  * Smooth staggered entrance animations on scroll.
-  * Interactive modal popup for project previews or video showreels.
-
-*(For copy-paste ready component implementations, consult [references/prompt-library.md](./references/prompt-library.md).)*
+*(Consult [references/prompt-library.md](./references/prompt-library.md) for ready-to-use React/TSX implementations.)*
 
 ---
 
-## Step 6: Code Generation Standards
+## Step 4: Code Generation Architecture (React + Vite by Default)
 
-When generating the portfolio:
+Unless the user explicitly requests another stack (e.g. static single HTML or Next.js), **always generate a full React + Vite + Tailwind CSS (TypeScript) application**:
 
-1. **Zero-Dependency Production Standalone by Default**:
-   * Output a production-ready `index.html` with:
-     * Tailwind CSS CDN (`https://cdn.tailwindcss.com`) configured with custom fonts, colors, and dark mode class.
-     * Lucide Icons CDN (`https://unpkg.com/lucide@latest`) for crisp SVG icons.
-     * Google Fonts preloaded (e.g., `Inter`, `Plus Jakarta Sans`, `Geist`, or `Fira Code`).
-     * Embedded vanilla JavaScript for the theme switcher, mobile menu, smooth scrolling, copy-to-clipboard, and modal handlers.
-   * *Why?* The user can double-click the file and see a functioning portfolio instantly in any browser without needing `npm install` or build tools.
+### Project Structure:
+```text
+my-portfolio/
+├── package.json
+├── vite.config.ts
+├── tailwind.config.js
+├── postcss.config.js
+├── tsconfig.json
+├── index.html
+└── src/
+    ├── main.tsx
+    ├── App.tsx
+    ├── index.css
+    ├── components/
+    │   ├── ui/
+    │   │   ├── Spotlight.tsx
+    │   │   ├── BentoGrid.tsx
+    │   │   ├── BorderBeam.tsx
+    │   │   ├── Terminal.tsx
+    │   │   ├── CopyEmailButton.tsx
+    │   │   └── ThemeToggle.tsx
+    │   └── sections/
+    │       ├── Navbar.tsx
+    │       ├── Hero.tsx
+    │       ├── ExpertiseBento.tsx
+    │       ├── Projects.tsx
+    │       ├── AILabs.tsx (or MediaShowreel for editors)
+    │       ├── ContentSection.tsx
+    │       └── Footer.tsx
+    └── types/
+        └── index.ts
+```
 
-2. **Full React / Vite / Next.js Support (When Requested)**:
-   * If the user requests a React, Next.js, or Vite project, provide the complete component breakdown (`Hero.tsx`, `Projects.tsx`, `Experience.tsx`, `BentoGrid.tsx`, `Contact.tsx`) along with `package.json` and Tailwind configuration.
-
-3. **Real, High-Quality Copy (No Lorem Ipsum!)**:
-   * Synthesize compelling headlines, metric-backed project descriptions, and natural bio text from the user's resume or questionnaire answers.
-   * If information is missing, infer sensible professional defaults and flag them with `<!-- CUSTOMIZE: ... -->` comments.
-
-4. **Essential Features Included in Every Portfolio**:
-   * Responsive navigation bar with mobile slide-out/dropdown menu.
-   * Dark / Light mode toggle switch with persistent `localStorage` memory.
-   * Hero section with availability status badge, social links, and clear primary CTA.
-   * About / Experience timeline with company, role, dates, and metric bullets.
-   * Featured Projects bento grid with live links, source links, and tech tags.
-   * Categorized skills pill badges.
-   * Contact footer with 1-click "Copy Email" button, social media icons, and resume download button.
-   * Accessible markup (`aria-label`, semantic tags `<header>`, `<main>`, `<section>`, `<footer>`).
+### Essential Dependencies (`package.json`):
+```json
+{
+  "name": "portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.17",
+    "lucide-react": "^0.460.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
+```
 
 ---
 
-## Step 7: Live Preview, Testing & Deployment Guidance
+## Step 5: Verification & Run Instructions
 
-After generating the code:
-
-1. **Provide a 1-click Preview Method**:
-   * Offer to launch a local server (e.g. `python scripts/serve.py` or `npx serve .`).
-   * Or direct the user to open `index.html` in their favorite browser.
-
-2. **Give Instant Deployment Options**:
-   * **GitHub Pages**: Push to repository and enable GitHub Pages in settings (instant 100% free hosting).
-   * **Vercel / Netlify**: Drag-and-drop or connect repo for instant custom domain + SSL.
-
-3. **Offer Next-Step Polish**:
-   * Swap placeholder images with their real photo or project screenshots.
-   * Add Google Analytics or Plausible analytics snippet.
-   * Connect a custom domain (e.g., `yourname.dev`).
+After generating the files:
+1. Run `npm install` and `npm run build` to verify there are zero TypeScript or bundling errors.
+2. Provide clear run commands:
+   ```bash
+   npm install
+   npm run dev
+   ```
+3. Highlight where the user can customize text, images, and project links.
 
 ---
 
 ## 📚 Supporting References
 
-* [references/questionnaire.md](./references/questionnaire.md) — Comprehensive resume fallback questionnaire.
-* [references/design-systems.md](./references/design-systems.md) — Color palettes, typography, and styling systems.
-* [references/archetypes.md](./references/archetypes.md) — Role-specific section blueprints (Dev, Video Editor, Designer, etc.).
-* [references/prompt-library.md](./references/prompt-library.md) — Ready-to-use component patterns (Bento, Spotlight, Modals, Showreels).
-* [templates/](./templates/) — Pre-built production reference implementations.
+* [references/questionnaire.md](./references/questionnaire.md) — 3-batch fallback intake questions.
+* [references/prompt-library.md](./references/prompt-library.md) — 21st.dev, Aceternity, and OriginUI React TSX patterns.
+* [references/design-systems.md](./references/design-systems.md) — Visual styles, palettes, and theme architectures.
+* [references/archetypes.md](./references/archetypes.md) — Role-specific section blueprints.
